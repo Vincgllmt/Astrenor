@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #f5f3ed;
+  --foreground-muted: #c4c0b5;
+  --primary: #d4af37;
+  --primary-dark: #a88b2a;
+  --secondary: #3d7a5d;
+  --accent: #b83a4b;
+  --meltoria: #d4af37;
+  --sylvestri: #4eba6f;
+  --anduin: #6ba3c7;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-meltoria: var(--meltoria);
+  --color-sylvestri: var(--sylvestri);
+  --color-anduin: var(--anduin);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #0a0a0a 0%, #151210 50%, #0a0a0a 100%);
+  color: var(--foreground);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Improve text readability */
+p, li, span {
+  color: var(--foreground);
+}
+
+.text-foreground\/60 {
+  color: rgba(245, 243, 237, 0.75) !important;
+}
+
+.text-foreground\/70 {
+  color: rgba(245, 243, 237, 0.85) !important;
+}
+
+.text-foreground\/80 {
+  color: rgba(245, 243, 237, 0.92) !important;
+}
+
+.text-foreground\/50 {
+  color: rgba(245, 243, 237, 0.7) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1510;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-dark);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Decorative elements */
+.ornament {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 20'%3E%3Cpath d='M0 10 Q25 0 50 10 Q75 20 100 10' stroke='%23d4af37' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 200px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary-dark); }
+  50% { box-shadow: 0 0 20px var(--primary), 0 0 30px var(--primary-dark); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Background pattern */
+.bg-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(61, 122, 93, 0.04) 0%, transparent 50%);
+}
+
+/* Card styles with better contrast */
+.card-hover {
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.25);
+}
+
+/* Improve card backgrounds */
+.bg-black\/40 {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.bg-black\/30 {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Text gradient - brighter */
+.text-gradient {
+  background: linear-gradient(135deg, #e8c547 0%, #f5e6a3 50%, #e8c547 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Border ornament */
+.border-ornament {
+  border: 2px solid var(--primary-dark);
+  position: relative;
+}
+
+.border-ornament::before,
+.border-ornament::after {
+  content: '◆';
+  position: absolute;
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.border-ornament::before {
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.border-ornament::after {
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  margin: 3rem 0;
+}
+
+/* Better text colors for small text */
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.text-xs {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
