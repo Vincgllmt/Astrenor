@@ -1,17 +1,58 @@
 @import "tailwindcss";
 
-:root {
+/* Theme: Meltoria (Gold - Default) */
+:root,
+[data-kingdom="meltoria"] {
   --background: #0a0a0a;
   --foreground: #e8e5dc;
   --foreground-muted: #b8b4a8;
   --foreground-dark: #2a2520;
   --primary: #d4af37;
   --primary-dark: #a88b2a;
+  --primary-light: #e8c547;
   --secondary: #3d7a5d;
   --accent: #b83a4b;
   --meltoria: #d4af37;
   --sylvestri: #4eba6f;
   --anduin: #6ba3c7;
+  --theme-gradient-start: rgba(212, 175, 55, 0.04);
+  --theme-gradient-end: rgba(61, 122, 93, 0.04);
+}
+
+/* Theme: Sylvestri (Forest Green) */
+[data-kingdom="sylvestri"] {
+  --background: #080a08;
+  --foreground: #dce8dc;
+  --foreground-muted: #a8b8a8;
+  --foreground-dark: #1a251a;
+  --primary: #4eba6f;
+  --primary-dark: #3d8a55;
+  --primary-light: #6ed48f;
+  --secondary: #8bc34a;
+  --accent: #2e7d32;
+  --meltoria: #d4af37;
+  --sylvestri: #4eba6f;
+  --anduin: #6ba3c7;
+  --theme-gradient-start: rgba(78, 186, 111, 0.06);
+  --theme-gradient-end: rgba(46, 125, 50, 0.04);
+}
+
+/* Theme: Anduin (Imperial Brown/Cold) */
+[data-kingdom="anduin"] {
+  --background: #0a0908;
+  --foreground: #e0dcd8;
+  --foreground-muted: #b0a89f;
+  --foreground-dark: #251f1a;
+  --primary: #8b6f4a;
+  --primary-dark: #6a5338;
+  --primary-light: #a8896a;
+  --secondary: #5d6d7e;
+  --accent: #935b3b;
+  --meltoria: #d4af37;
+  --sylvestri: #4eba6f;
+  --anduin: #8b6f4a;
+  --theme-gradient-start: rgba(139, 111, 74, 0.06);
+  --theme-gradient-end: rgba(93, 109, 126, 0.04);
 }
 
 @theme inline {
@@ -21,6 +62,7 @@
   --color-foreground-dark: var(--foreground-dark);
   --color-primary: var(--primary);
   --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
   --color-meltoria: var(--meltoria);
@@ -37,12 +79,13 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg, #0a0a0a 0%, #151210 50%, #0a0a0a 100%);
+  background: linear-gradient(180deg, var(--background) 0%, #151210 50%, var(--background) 100%);
   color: var(--foreground);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
   line-height: 1.7;
   font-size: 16px;
+  transition: background 0.5s ease, color 0.3s ease;
 }
 
 /* Improve text readability */
@@ -125,11 +168,12 @@ p, li, span {
   animation: float 6s ease-in-out infinite;
 }
 
-/* Background pattern */
+/* Background pattern - uses theme variables */
 .bg-pattern {
   background-image: 
-    radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(61, 122, 93, 0.04) 0%, transparent 50%);
+    radial-gradient(circle at 25% 25%, var(--theme-gradient-start) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, var(--theme-gradient-end) 0%, transparent 50%);
+  transition: background-image 0.5s ease;
 }
 
 /* Card styles with better contrast */
@@ -181,9 +225,25 @@ p, li, span {
   background: linear-gradient(to bottom right, rgba(184, 58, 75, 0.15), transparent), rgba(15, 10, 12, 0.9) !important;
 }
 
-/* Text gradient - brighter */
+/* Text gradient - adapts to theme */
 .text-gradient {
-  background: linear-gradient(135deg, #e8c547 0%, #f5e6a3 50%, #e8c547 100%);
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 50%, var(--primary-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Sylvestri theme text gradient */
+[data-kingdom="sylvestri"] .text-gradient {
+  background: linear-gradient(135deg, #6ed48f 0%, #a8e6b8 50%, #6ed48f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Anduin theme text gradient */
+[data-kingdom="anduin"] .text-gradient {
+  background: linear-gradient(135deg, #a8896a 0%, #c4a882 50%, #a8896a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -231,4 +291,31 @@ p, li, span {
 .text-xs {
   font-size: 0.8rem;
   line-height: 1.5;
+}
+
+/* Theme-specific body backgrounds */
+[data-kingdom="sylvestri"] body {
+  background: linear-gradient(180deg, #080a08 0%, #0f1510 50%, #080a08 100%);
+}
+
+[data-kingdom="anduin"] body {
+  background: linear-gradient(180deg, #0a0908 0%, #15120f 50%, #0a0908 100%);
+}
+
+/* Theme-specific scrollbar */
+[data-kingdom="sylvestri"] ::-webkit-scrollbar-track {
+  background: #0f150f;
+}
+
+[data-kingdom="anduin"] ::-webkit-scrollbar-track {
+  background: #15120f;
+}
+
+/* Theme-specific card hover effects */
+[data-kingdom="sylvestri"] .card-hover:hover {
+  box-shadow: 0 10px 40px rgba(78, 186, 111, 0.25);
+}
+
+[data-kingdom="anduin"] .card-hover:hover {
+  box-shadow: 0 10px 40px rgba(139, 111, 74, 0.25);
 }

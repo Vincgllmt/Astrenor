@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import ThemeSelector from './ThemeSelector';
 
 const navigation = [
   { name: 'Accueil', href: '/' },
@@ -68,6 +69,11 @@ export default function Header() {
                 )}
               </div>
             ))}
+            
+            {/* Theme Selector */}
+            <div className="ml-4">
+              <ThemeSelector />
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -113,6 +119,12 @@ export default function Header() {
                 )}
               </div>
             ))}
+            
+            {/* Mobile Theme Selector */}
+            <div className="px-4 py-3 border-t border-primary-dark/50 flex items-center justify-between">
+              <span className="text-foreground/60 text-sm">Thème</span>
+              <ThemeSelector />
+            </div>
           </div>
         )}
       </nav>

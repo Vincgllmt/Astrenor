@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cinzel, Lora } from "next/font/google";
 import "./globals.css";
 import { Header, Footer } from "@/components";
+import { ThemeProvider } from "@/contexts";
 
 const cinzel = Cinzel({
   variable: "--font-cinzel",
@@ -27,15 +28,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
       <body
         className={`${cinzel.variable} ${lora.variable} antialiased bg-pattern min-h-screen`}
       >
-        <Header />
-        <main className="pt-20">
-          {children}
-        </main>
-        <Footer />
+        <ThemeProvider>
+          <Header />
+          <main className="pt-20">
+            {children}
+          </main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
