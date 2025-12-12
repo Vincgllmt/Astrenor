@@ -29,9 +29,9 @@ export default function MagiePage() {
           
           <div className="bg-gradient-to-br from-sylvestri/10 to-transparent border border-sylvestri/30 rounded-xl p-8">
             <p className="text-foreground/70 text-lg mb-6">
-              Sylvestri est le plus vieux pays d&apos;Astrenor et le plus magique. C&apos;est la terre 
-              des elfes et autres races magiques. Ce sont d&apos;ailleurs les elfes qui partagèrent 
-              leurs dons magiques aux humains, créant les premiers Sorciers.
+              La magie est présente depuis la nuit des temps mais elle n&apos;est pas très bien 
+              équilibrée entre les royaumes. En effet, en Sylvestri le mana est disponible en 
+              énorme quantité du fait que c&apos;est son lieu de naissance.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -50,6 +50,88 @@ export default function MagiePage() {
                 <h4 className="text-accent font-bold">Mages</h4>
                 <p className="text-foreground/60 text-sm">Formés à l&apos;Académie Étherium</p>
               </div>
+            </div>
+
+            <div className="mt-6 p-4 bg-sylvestri/10 border border-sylvestri/20 rounded-lg">
+              <p className="text-foreground/60 text-sm">
+                <span className="text-sylvestri font-semibold">🌲 La Forêt Consciente :</span> La forêt 
+                de Sylvestri semble avoir sa propre conscience et empêche les personnes trop puissantes 
+                d&apos;entrer dans certaines zones, les faisant tourner en rond à l&apos;infini ou en les guidant 
+                toujours vers leur point d&apos;entrée.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Forms of Magic */}
+        <section className="mb-16">
+          <SectionTitle title="Les Formes de la Magie" subtitle="La magie peut prendre plusieurs formes chez un individu" />
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="bg-black/40 border border-red-500/30 rounded-xl p-4 text-center hover:border-red-500/50 transition-colors">
+              <div className="text-3xl mb-2">🔥</div>
+              <h4 className="text-red-400 font-bold text-sm">Éléments</h4>
+              <p className="text-foreground/50 text-xs">Feu, eau, vent, terre...</p>
+            </div>
+            <div className="bg-black/40 border border-yellow-500/30 rounded-xl p-4 text-center hover:border-yellow-500/50 transition-colors">
+              <div className="text-3xl mb-2">💪</div>
+              <h4 className="text-yellow-400 font-bold text-sm">Renforcement</h4>
+              <p className="text-foreground/50 text-xs">Amélioration musculaire</p>
+            </div>
+            <div className="bg-black/40 border border-green-500/30 rounded-xl p-4 text-center hover:border-green-500/50 transition-colors">
+              <div className="text-3xl mb-2">💚</div>
+              <h4 className="text-green-400 font-bold text-sm">Soins</h4>
+              <p className="text-foreground/50 text-xs">Guérison et régénération</p>
+            </div>
+            <div className="bg-black/40 border border-purple-500/30 rounded-xl p-4 text-center hover:border-purple-500/50 transition-colors">
+              <div className="text-3xl mb-2">✨</div>
+              <h4 className="text-purple-400 font-bold text-sm">Capacités</h4>
+              <p className="text-foreground/50 text-xs">Nouvelles aptitudes</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Daily Magic */}
+        <section className="mb-16">
+          <SectionTitle title="La Magie au Quotidien" subtitle="Un confort similaire au nôtre grâce aux pierres magiques" />
+          
+          <div className="bg-gradient-to-br from-primary/10 to-transparent border border-primary/30 rounded-xl p-8">
+            <p className="text-foreground/70 text-lg mb-6">
+              La magie sert au quotidien de chaque habitant d&apos;Astrenor. Grâce à celle-ci, 
+              on retrouve un chemin de vie similaire au nôtre : des fours, des frigidaires, 
+              des lampes et des canalisations.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+              <div className="bg-black/40 border border-blue-500/30 rounded-lg p-4 text-center">
+                <div className="text-3xl mb-2">💧</div>
+                <h4 className="text-blue-400 font-bold">Pierre d&apos;Eau</h4>
+                <p className="text-foreground/50 text-xs">Pour les bains et canalisations</p>
+              </div>
+              <div className="bg-black/40 border border-red-500/30 rounded-lg p-4 text-center">
+                <div className="text-3xl mb-2">🔥</div>
+                <h4 className="text-red-400 font-bold">Pierre de Feu</h4>
+                <p className="text-foreground/50 text-xs">Pour chauffer l&apos;eau</p>
+              </div>
+              <div className="bg-black/40 border border-cyan-500/30 rounded-lg p-4 text-center">
+                <div className="text-3xl mb-2">❄️</div>
+                <h4 className="text-cyan-400 font-bold">Pierre de Glace</h4>
+                <p className="text-foreground/50 text-xs">Pour refroidir</p>
+              </div>
+              <div className="bg-black/40 border border-yellow-500/30 rounded-lg p-4 text-center">
+                <div className="text-3xl mb-2">⚡</div>
+                <h4 className="text-yellow-400 font-bold">Pierre de Foudre</h4>
+                <p className="text-foreground/50 text-xs">Pour les lampes</p>
+              </div>
+            </div>
+
+            <div className="bg-black/40 border border-yellow-500/20 rounded-lg p-4">
+              <p className="text-foreground/60 text-sm">
+                <span className="text-yellow-400 font-semibold">💡 Éclairage :</span> Les lampes 
+                fonctionnent avec des pierres de foudre mais sont réservées aux nobles des différents 
+                royaumes. Le peuple en dispose d&apos;une seule dans leur salon à la limite, le reste 
+                étant de l&apos;éclairage à la bougie.
+              </p>
             </div>
           </div>
         </section>
@@ -136,17 +218,227 @@ export default function MagiePage() {
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="mt-8 p-4 bg-sylvestri/10 border border-sylvestri/30 rounded-lg">
+          <div className="mt-8 p-4 bg-sylvestri/10 border border-sylvestri/30 rounded-lg">
               <p className="text-foreground/70 text-center">
                 🎓 Tous les individus possédant de la magie et ayant au moins 10 ans peuvent rejoindre 
                 l&apos;académie, peu importe leur statut ou royaume d&apos;origine.
               </p>
             </div>
+        </section>
+
+        {/* The Mages */}
+        <section className="mb-16">
+          <SectionTitle title="Les Mages" subtitle="Ceux qui dédient leur vie à la magie" />
+          
+          <div className="bg-gradient-to-br from-purple-600/10 to-transparent border border-purple-600/30 rounded-xl p-8">
+            <p className="text-foreground/70 text-lg mb-6">
+              Certaines personnes dédient leur vie à la magie et ce sont les mages. Il en existe 
+              autant qu&apos;il existe de types de fleurs différentes : invocateurs, élémentalistes, 
+              nécromanciens...
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-black/40 border border-purple-600/20 rounded-lg p-4">
+                <h4 className="text-purple-400 font-bold mb-2">🎯 Spécialisation</h4>
+                <p className="text-foreground/60 text-sm">
+                  Chacun se spécialise dans une voie, et il est presque impossible de changer 
+                  sans oublier tout son savoir.
+                </p>
+              </div>
+              <div className="bg-black/40 border border-purple-600/20 rounded-lg p-4">
+                <h4 className="text-purple-400 font-bold mb-2">❓ Mystères</h4>
+                <p className="text-foreground/60 text-sm">
+                  Pourquoi les mages n&apos;ont pas de pouvoir ? Pourquoi des fleurs apparaissent 
+                  sur leurs tombes ? Le monde des mages reste à découvrir.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-black/40 border border-accent/20 rounded-lg p-4">
+              <p className="text-foreground/60 text-sm">
+                <span className="text-accent font-semibold">⚠️ Important :</span> La magie est capricieuse. 
+                Le monde interdit d&apos;être un génie dans la magie sans y consacrer sa vie entière. 
+                C&apos;est comme un cadeau des dieux qu&apos;il faut mériter en y mettant toute son âme.
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* Ranks */}
+        {/* Magic Levels */}
+        <section className="mb-16">
+          <SectionTitle title="Les Niveaux de Magie" subtitle="Chaque niveau ressemble à un anneau autour du cœur" />
+          
+          <div className="mb-6 bg-black/40 border border-primary/30 rounded-lg p-4 text-center">
+            <p className="text-foreground/60 text-sm">
+              Les personnes peuvent uniquement sentir leur propre niveau, ou celui d&apos;une personne 
+              avec qui ils partagent un lien profond et intense.
+              <br />
+              <span className="text-accent font-semibold">⚠️ Un non-mage ne peut pas dépasser l&apos;Intermédiaire ou l&apos;Expert selon la puissance de son pouvoir.</span>
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <div className="bg-gradient-to-r from-gray-600/20 to-transparent border border-gray-500/30 rounded-xl p-6">
+              <div className="flex items-center gap-4">
+                <div className="flex gap-1">
+                  <div className="w-4 h-4 rounded-full bg-gray-500"></div>
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-lg font-bold text-gray-300">Débutant</h4>
+                  <span className="text-gray-400 text-sm">0 à 1 anneau</span>
+                </div>
+              </div>
+              <p className="text-foreground/60 text-sm mt-3">
+                Le niveau le plus basique et atteignable par la majorité. Permet de lancer une petite 
+                flamme, faire un peu de vent. Surtout utile au quotidien.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-green-600/20 to-transparent border border-green-500/30 rounded-xl p-6">
+              <div className="flex items-center gap-4">
+                <div className="flex gap-1">
+                  <div className="w-4 h-4 rounded-full bg-green-500"></div>
+                  <div className="w-4 h-4 rounded-full bg-green-500"></div>
+                  <div className="w-4 h-4 rounded-full bg-green-500/50"></div>
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-lg font-bold text-green-400">Intermédiaire</h4>
+                  <span className="text-green-400/70 text-sm">2 à 3 anneaux</span>
+                </div>
+              </div>
+              <p className="text-foreground/60 text-sm mt-3">
+                Vous pouvez vous battre avec une boule de feu. Vous avez déjà passé un petit moment 
+                à feuilleter un livre pour atteindre ce niveau, mais la réserve de mana risque d&apos;être 
+                votre plus grand problème.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-blue-600/20 to-transparent border border-blue-500/30 rounded-xl p-6">
+              <div className="flex items-center gap-4">
+                <div className="flex gap-1">
+                  {[...Array(6)].map((_, i) => (
+                    <div key={i} className={`w-4 h-4 rounded-full ${i < 4 ? 'bg-blue-500' : 'bg-blue-500/50'}`}></div>
+                  ))}
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-lg font-bold text-blue-400">Expert</h4>
+                  <span className="text-blue-400/70 text-sm">4 à 6 anneaux</span>
+                </div>
+              </div>
+              <p className="text-foreground/60 text-sm mt-3">
+                Vous avez eu un professeur très certainement et vous consacrez votre vie à la magie. 
+                D&apos;ailleurs vous êtes sans pouvoir — la magie semble avoir remplacé toute possibilité pour vous.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-primary/20 to-transparent border border-primary/30 rounded-xl p-6">
+              <div className="flex items-center gap-4">
+                <div className="flex gap-1">
+                  {[...Array(8)].map((_, i) => (
+                    <div key={i} className="w-4 h-4 rounded-full bg-primary"></div>
+                  ))}
+                  <span className="text-primary">...</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-lg font-bold text-primary">Évêque</h4>
+                  <span className="text-primary/70 text-sm">6 à 15 anneaux</span>
+                </div>
+              </div>
+              <p className="text-foreground/60 text-sm mt-3">
+                Félicitations ! Vous êtes diplômé de l&apos;académie ! Des années à travailler vont enfin 
+                être récompensées. À ce stade, vous êtes déjà un grand mage, au-dessus du panier, 
+                mais il y a encore de quoi s&apos;améliorer — vous le savez, vous le sentez en vous.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-accent/20 to-transparent border border-accent/30 rounded-xl p-6">
+              <div className="flex items-center gap-4">
+                <div className="flex gap-1">
+                  {[...Array(6)].map((_, i) => (
+                    <div key={i} className="w-4 h-4 rounded-full bg-accent animate-pulse"></div>
+                  ))}
+                  <span className="text-accent font-bold">∞</span>
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-lg font-bold text-accent">Archevêque</h4>
+                  <span className="text-accent/70 text-sm">15+ anneaux (???)</span>
+                </div>
+              </div>
+              <p className="text-foreground/60 text-sm mt-3">
+                Vous ne vous servez pas de la magie, vous en êtes probablement à l&apos;origine. 
+                Le monde vous appartient, et vous n&apos;avez qu&apos;à l&apos;imaginer pour le voir changer 
+                en un battement de cil.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Runes */}
+        <section className="mb-16">
+          <SectionTitle title="Les Runes" subtitle="Magie accessible à tous, créée par les Nains" />
+          
+          <div className="bg-gradient-to-br from-anduin/10 to-transparent border border-anduin/30 rounded-xl p-8 mb-6">
+            <div className="flex items-start gap-6">
+              <div className="text-5xl">⚒️</div>
+              <div>
+                <h3 className="text-xl font-bold text-anduin mb-4">L&apos;Art Runique</h3>
+                <p className="text-foreground/70 mb-4">
+                  Les runes créent une magie relativement puissante et ne dépendent pas des principes 
+                  d&apos;affinité du mana ni du niveau de magie du sujet — ce qui en fait une magie puissante 
+                  pour les débutants.
+                </p>
+                <p className="text-foreground/70">
+                  Les <span className="text-anduin font-semibold">nains des montagnes</span> à la frontière 
+                  entre Meltoria et Anduin sont les créateurs des runes et en sont les principaux artisans, 
+                  malgré leur ignorance du fonctionnement profond de ces dernières.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="bg-black/40 border border-anduin/30 rounded-xl p-6">
+              <h4 className="text-lg font-bold text-anduin mb-4">⚔️ Utilisations Combatives</h4>
+              <ul className="space-y-2 text-foreground/60 text-sm">
+                <li className="flex items-start"><span className="text-anduin mr-2">•</span>Enchanter des armes</li>
+                <li className="flex items-start"><span className="text-anduin mr-2">•</span>Créer des golems</li>
+                <li className="flex items-start"><span className="text-anduin mr-2">•</span>Créer des pièges magiques</li>
+                <li className="flex items-start"><span className="text-anduin mr-2">•</span>Altérer les corps (nécromancie)</li>
+              </ul>
+            </div>
+            
+            <div className="bg-black/40 border border-anduin/30 rounded-xl p-6">
+              <h4 className="text-lg font-bold text-anduin mb-4">🏠 Utilisations Quotidiennes</h4>
+              <ul className="space-y-2 text-foreground/60 text-sm">
+                <li className="flex items-start"><span className="text-anduin mr-2">•</span>Runes d&apos;eau en continu</li>
+                <li className="flex items-start"><span className="text-anduin mr-2">•</span>Pierres chauffantes</li>
+                <li className="flex items-start"><span className="text-anduin mr-2">•</span>Pierres refroidissantes</li>
+                <li className="flex items-start"><span className="text-anduin mr-2">•</span>Source majeure de richesse des nains</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-primary/10 to-transparent border border-primary/30 rounded-xl p-6">
+              <h4 className="text-lg font-bold text-primary mb-3">📜 Runes Gravées</h4>
+              <p className="text-foreground/60 text-sm">
+                Les runes sont des informations magiques pour le mana, comme un code magique qui peut 
+                insuffler du mana dans tous les éléments inanimés gravés. La maîtrise est difficile car 
+                les symboles doivent être gravés précisément.
+              </p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-accent/10 to-transparent border border-accent/30 rounded-xl p-6">
+              <h4 className="text-lg font-bold text-accent mb-3">🌀 Runes dans l&apos;Air</h4>
+              <p className="text-foreground/60 text-sm">
+                Ce que peu d&apos;artisans savent est la possibilité de graver des runes dans l&apos;air, 
+                bien que volatiles. Plus complexes et destructrices, elles demandent une précision extrême.
+              </p>
+            </div>
+          </div>
+        </section>        {/* Ranks */}
         <section className="mb-16">
           <SectionTitle title="Les Rangs Magiques" />
           

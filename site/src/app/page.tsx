@@ -108,7 +108,7 @@ export default function Home() {
       <section className="py-16 px-4 bg-black/30">
         <div className="max-w-4xl mx-auto text-center">
           <SectionTitle 
-            title="Le Rivelet" 
+            title="Le Rufiyaa" 
             subtitle="La monnaie commune d'Astrenor"
           />
           
