@@ -2,8 +2,9 @@
 
 :root {
   --background: #0a0a0a;
-  --foreground: #f5f3ed;
-  --foreground-muted: #c4c0b5;
+  --foreground: #e8e5dc;
+  --foreground-muted: #b8b4a8;
+  --foreground-dark: #2a2520;
   --primary: #d4af37;
   --primary-dark: #a88b2a;
   --secondary: #3d7a5d;
@@ -17,6 +18,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-dark: var(--foreground-dark);
   --color-primary: var(--primary);
   --color-primary-dark: var(--primary-dark);
   --color-secondary: var(--secondary);
@@ -49,23 +51,23 @@ p, li, span {
 }
 
 .text-foreground\/40 {
-  color: rgba(167, 160, 139, 0.6) !important;
+  color: #8a857a !important;
 }
 
 .text-foreground\/50 {
-  color: rgba(186, 178, 155, 0.7) !important;
+  color: #9a958a !important;
 }
 
 .text-foreground\/60 {
-  color: rgba(190, 182, 158, 0.75) !important;
+  color: #a8a295 !important;
 }
 
 .text-foreground\/70 {
-  color: rgba(200, 188, 154, 0.8) !important;
+  color: #b5b0a3 !important;
 }
 
 .text-foreground\/80 {
-  color: rgba(196, 192, 181, 0.85) !important;
+  color: #c5c0b5 !important;
 }
 
 /* Custom scrollbar */
@@ -141,13 +143,42 @@ p, li, span {
   box-shadow: 0 10px 40px rgba(212, 175, 55, 0.25);
 }
 
-/* Improve card backgrounds */
+/* Improve card backgrounds - ensure dark base */
 .bg-black\/40 {
-  background-color: rgba(0, 0, 0, 0.6) !important;
+  background-color: rgba(10, 10, 10, 0.75) !important;
 }
 
 .bg-black\/30 {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(10, 10, 10, 0.65) !important;
+}
+
+/* Kingdom/color themed backgrounds with dark overlay */
+.bg-meltoria\/10,
+.bg-sylvestri\/10,
+.bg-anduin\/10,
+.bg-primary\/10,
+.bg-accent\/10 {
+  position: relative;
+}
+
+.bg-meltoria\/10 {
+  background: linear-gradient(to bottom right, rgba(212, 175, 55, 0.15), transparent), rgba(15, 12, 10, 0.9) !important;
+}
+
+.bg-sylvestri\/10 {
+  background: linear-gradient(to bottom right, rgba(78, 186, 111, 0.15), transparent), rgba(10, 15, 12, 0.9) !important;
+}
+
+.bg-anduin\/10 {
+  background: linear-gradient(to bottom right, rgba(107, 163, 199, 0.15), transparent), rgba(10, 12, 15, 0.9) !important;
+}
+
+.bg-primary\/10 {
+  background: linear-gradient(to bottom right, rgba(212, 175, 55, 0.12), transparent), rgba(15, 12, 10, 0.9) !important;
+}
+
+.bg-accent\/10 {
+  background: linear-gradient(to bottom right, rgba(184, 58, 75, 0.15), transparent), rgba(15, 10, 12, 0.9) !important;
 }
 
 /* Text gradient - brighter */
