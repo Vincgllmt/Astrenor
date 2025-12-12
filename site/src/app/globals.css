@@ -48,20 +48,24 @@ p, li, span {
   color: var(--foreground);
 }
 
-.text-foreground\/60 {
-  color: rgba(245, 243, 237, 0.75) !important;
-}
-
-.text-foreground\/70 {
-  color: rgba(245, 243, 237, 0.85) !important;
-}
-
-.text-foreground\/80 {
-  color: rgba(245, 243, 237, 0.92) !important;
+.text-foreground\/40 {
+  color: rgba(167, 160, 139, 0.6) !important;
 }
 
 .text-foreground\/50 {
-  color: rgba(245, 243, 237, 0.7) !important;
+  color: rgba(186, 178, 155, 0.7) !important;
+}
+
+.text-foreground\/60 {
+  color: rgba(190, 182, 158, 0.75) !important;
+}
+
+.text-foreground\/70 {
+  color: rgba(200, 188, 154, 0.8) !important;
+}
+
+.text-foreground\/80 {
+  color: rgba(196, 192, 181, 0.85) !important;
 }
 
 /* Custom scrollbar */
