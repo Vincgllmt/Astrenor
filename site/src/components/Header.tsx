@@ -19,6 +19,15 @@ const navigation = [
   { name: 'Magie', href: '/magie' },
   { name: 'Les Enfers', href: '/enfers' },
   { name: 'Religion', href: '/religion' },
+  { 
+    name: 'Encyclopédie', 
+    href: '/races',
+    submenu: [
+      { name: 'Races', href: '/races' },
+      { name: 'Bestiaire', href: '/bestiaire' },
+      { name: 'Légendes', href: '/legendes' },
+    ]
+  },
 ];
 
 export default function Header() {
