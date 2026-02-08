@@ -56,7 +56,7 @@ export default function RacesPage() {
             Les Races
           </h1>
           <p className="text-foreground/70 max-w-3xl mx-auto">
-            Des humains aux créatures mystiques, découvrez les différents peuples 
+            Des humains aux créatures mystiques, découvrez les différents peuples
             qui façonnent le destin du continent d&apos;Astrenor.
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function RacesPage() {
         {/* Races Communes */}
         <section className="mb-16">
           <SectionTitle title="Races Communes" subtitle="Les peuples les plus répandus d'Astrenor" />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <RaceCard
               name="Humains"
@@ -102,7 +102,7 @@ export default function RacesPage() {
         {/* Sous-races d'Elfes */}
         <section className="mb-16">
           <SectionTitle title="Les Variantes Elfiques" />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="bg-gradient-to-br from-white/10 to-transparent border border-white/20 rounded-xl p-4">
               <h4 className="font-bold text-white mb-2">Elfes Blancs (Hauts-Elfes)</h4>
@@ -126,12 +126,12 @@ export default function RacesPage() {
         {/* Races Maudites */}
         <section className="mb-16">
           <SectionTitle title="Races Maudites" subtitle="Ceux qui portent le fardeau d'une malédiction" />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <RaceCard
               name="Lycanthropes"
               icon="🐺"
-              description="D'apparence humaine le jour, ils se transforment certaines nuits en forme bestiale monstrueuse. Les jeunes sont incapables de résister à l'appel sauvage, oubliant leur sapience."
+              description="D'apparence humaine le jour, ils se transforment certaines nuits en forme bestiale monstrueuse. Les jeunes sont incapables de résister à l'appel sauvage, oubliant leur sapience. Il existe des familles nobles de Lycans."
               capacity="Vitesse et ouïe décuplées, meilleure vue nocturne et excellent odorat. La transformation est différente pour chaque individu."
               origin="Meltoria & Anduin"
               lifespan="100 ans"
@@ -142,12 +142,59 @@ export default function RacesPage() {
             <RaceCard
               name="Vampires"
               icon="🧛"
-              description="Créatures qui ne peuvent vivre qu'en se nourrissant de sang. Corps froid et sans vie. Peuvent transformer d'autres personnes, se changer en chauve-souris et marcher sur l'eau."
-              capacity="Affinité magique accrue, régénération. Affaiblis par le soleil. Un vampire affamé devient une bête sauvage avec force inextricable mais réflexes brutaux."
+              description="Morts depuis la naissance. Ils craignent le soleil (Solaris) et peuvent passer des pactes avec des esprits. Certaines sectes comme le Soleil Rouge organisent des rituels de transformation de masse."
+              capacity="Affinité magique accrue, régénération. Affaiblis par le soleil. Peuvent se transformer en chauve-souris et marcher sur l'eau."
               origin="Meltoria"
-              lifespan="Immortel (sans cœur ils meurent)"
+              lifespan="Immortel"
               color="red"
               stats={{ force: 7, agilite: 2, intelligence: 6 }}
+            />
+
+            <RaceCard
+              name="Ombres"
+              icon="👤"
+              description="Créatures intangibles vivant souvent dans des cryptes anciennes. Elles sont insensibles aux attaques physiques classiques."
+              capacity="Intangibilité, discrétion absolue, résistance physique totale."
+              origin="Cryptes anciennes"
+              lifespan="Inconnu"
+              color="gray"
+            />
+          </div>
+        </section>
+
+        {/* Hybrides */}
+        <section className="mb-16">
+          <SectionTitle title="Hybrides et Autres Créatures" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <RaceCard
+              name="Demi-Orcs"
+              icon="👹"
+              description="Croisement entre Humains et Orcs. Souvent rejetés par la société à cause de leur héritage, ils cherchent souvent leur place dans le monde."
+              capacity="Force physique supérieure à la moyenne, endurance accrue."
+              origin="Meltoria & Terres Sauvages"
+              lifespan="60-70 ans"
+              color="green"
+            />
+
+            <RaceCard
+              name="Demi-Démons"
+              icon="👿"
+              description="Croisement entre Humains et Démons. Ils peuvent hériter de traits physiques distinctifs comme des yeux à pupille verticale ou des cheveux de couleur atypique."
+              capacity="Affinité mineure avec la magie noire ou le feu, résistance accrue."
+              origin="Les Enfers & Monde Mortel"
+              lifespan="80-100 ans"
+              color="red"
+            />
+
+            <RaceCard
+              name="Mi-Bêtes"
+              icon="🐾"
+              description="Hybrides humain-animal plus prononcés que les demi-humains classiques (ex: mi-vache). Souvent issus de la magie ou de conditions particulières."
+              capacity="Traits liés à l'animal (force, agilité, sens)."
+              origin="Sylvestri"
+              lifespan="Variable"
+              color="sylvestri"
             />
           </div>
         </section>
@@ -155,7 +202,7 @@ export default function RacesPage() {
         {/* Races de Sylvestri */}
         <section className="mb-16">
           <SectionTitle title="Créatures de Sylvestri" subtitle="Nées de la magie des forêts enchantées" />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <RaceCard
               name="Demi-Humains"
@@ -223,7 +270,7 @@ export default function RacesPage() {
         {/* Races Guerrières */}
         <section className="mb-16">
           <SectionTitle title="Races Guerrières" />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <RaceCard
               name="Orcs"
@@ -250,7 +297,7 @@ export default function RacesPage() {
         {/* Races des Enfers */}
         <section className="mb-16">
           <SectionTitle title="Créatures des Enfers" subtitle="Ceux qui viennent des profondeurs infernales" />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <RaceCard
               name="Démons"
@@ -287,7 +334,7 @@ export default function RacesPage() {
         {/* Races Célestes et Spirituelles */}
         <section className="mb-16">
           <SectionTitle title="Êtres Célestes & Spirituels" />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <RaceCard
               name="Anges"
@@ -314,12 +361,12 @@ export default function RacesPage() {
         {/* Races Draconiques */}
         <section className="mb-16">
           <SectionTitle title="Races Draconiques" />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <RaceCard
               name="Demi-Dragons"
               icon="🐲"
-              description="Mi-humains mi-dragons avec ailes, queue et parfois écailles. Apparence impressionnante et force brute."
+              description="Mi-humains mi-dragons avec ailes, queue et parfois écailles. Apparence impressionnante et force brute. Certains vivent cachés comme la famille Nécéron."
               capacity="Vol grâce à des ailes puissantes, cracher du feu. Peau épaisse et résistante aux attaques physiques et magiques avec écailles (temporaires)."
               origin="Astrenor"
               lifespan="100 ans"
@@ -332,12 +379,12 @@ export default function RacesPage() {
                 <h3 className="text-xl font-bold text-orange-500">Les Dragons (Bestiaire)</h3>
               </div>
               <p className="text-foreground/70 text-sm mb-4">
-                Les vrais dragons ne sont pas une race jouable. Sommet de la chaîne alimentaire, 
-                maîtres du chaos et de la destruction. Après avoir été chassés par les seigneurs 
-                de Meltoria, ils se sont enfuis sur un autre continent.
+                Créatures intelligentes et dévastatrices. Capables d'organiser des attaques militaires massives sur des villes
+                et de gérer des camps de prisonniers. Ils sont servis par des &quot;adeptes&quot;.
+                Certains très puissants peuvent prendre forme humaine.
               </p>
-              <Link 
-                href="/bestiaire" 
+              <Link
+                href="/bestiaire"
                 className="inline-block text-orange-400 hover:text-orange-300 text-sm underline"
               >
                 Voir le bestiaire →
@@ -351,20 +398,20 @@ export default function RacesPage() {
           <div className="text-center">
             <h3 className="text-xl font-bold text-foreground mb-6">Explorer d&apos;autres aspects d&apos;Astrenor</h3>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link 
-                href="/bestiaire" 
+              <Link
+                href="/bestiaire"
                 className="px-6 py-3 bg-accent/20 border border-accent/50 text-accent rounded-lg hover:bg-accent/30 transition-colors"
               >
                 🐉 Bestiaire
               </Link>
-              <Link 
-                href="/legendes" 
+              <Link
+                href="/legendes"
                 className="px-6 py-3 bg-primary/20 border border-primary/50 text-primary rounded-lg hover:bg-primary/30 transition-colors"
               >
                 📜 Légendes
               </Link>
-              <Link 
-                href="/royaumes" 
+              <Link
+                href="/royaumes"
                 className="px-6 py-3 bg-meltoria/20 border border-meltoria/50 text-meltoria rounded-lg hover:bg-meltoria/30 transition-colors"
               >
                 🏰 Les Royaumes

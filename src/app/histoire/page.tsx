@@ -18,7 +18,7 @@ export default function HistoirePage() {
             La Guerre des Deux Siècles
           </h1>
           <p className="text-foreground/70 max-w-3xl mx-auto">
-            Le conflit qui a façonné le destin d&apos;Astrenor, opposant l&apos;Empire d&apos;Anduin 
+            Le conflit qui a façonné le destin d&apos;Astrenor, opposant l&apos;Empire d&apos;Anduin
             à l&apos;alliance de Meltoria et Sylvestri pendant près de 200 ans.
           </p>
         </div>
@@ -46,26 +46,26 @@ export default function HistoirePage() {
         {/* Origins */}
         <section className="mb-16">
           <SectionTitle title="Les Origines du Conflit" />
-          
+
           <div className="bg-black/40 border border-primary-dark/50 rounded-xl p-8">
             <p className="text-foreground/70 text-lg mb-6">
-              Il y avait autrefois un monde en paix, où les différentes nations coexistaient 
-              dans l&apos;harmonie et la prospérité. Mais tout cela a changé lorsque l&apos;empereur 
+              Il y avait autrefois un monde en paix, où les différentes nations coexistaient
+              dans l&apos;harmonie et la prospérité. Mais tout cela a changé lorsque l&apos;empereur
               d&apos;Anduin a commencé à s&apos;étendre, annexant une partie de Meltoria.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-anduin/10 border border-anduin/30 rounded-lg p-4">
                 <h4 className="text-anduin font-bold mb-2">🎯 Objectif d&apos;Anduin</h4>
                 <p className="text-foreground/60 text-sm">
-                  Récupérer Sylvestri pour avoir accès à la magie, chose qui manque terriblement 
+                  Récupérer Sylvestri pour avoir accès à la magie, chose qui manque terriblement
                   à l&apos;Empire. Meltoria se trouvait malheureusement sur le chemin.
                 </p>
               </div>
               <div className="bg-primary/10 border border-primary/30 rounded-lg p-4">
                 <h4 className="text-primary font-bold mb-2">🤝 L&apos;Alliance Défensive</h4>
                 <p className="text-foreground/60 text-sm">
-                  Meltoria et Sylvestri formèrent une alliance pour résister à l&apos;Empire Anduin 
+                  Meltoria et Sylvestri formèrent une alliance pour résister à l&apos;Empire Anduin
                   et protéger leur souveraineté.
                 </p>
               </div>
@@ -76,15 +76,15 @@ export default function HistoirePage() {
         {/* Timeline */}
         <section className="mb-16">
           <SectionTitle title="Chronologie du Conflit" />
-          
+
           <div className="space-y-8">
             <div className="bg-black/40 border-l-4 border-accent rounded-r-xl p-6">
               <span className="text-accent font-bold">Début de la guerre</span>
               <h3 className="text-xl font-bold text-foreground mt-1 mb-3">L&apos;Invasion d&apos;Anduin</h3>
               <p className="text-foreground/70">
-                L&apos;alliance n&apos;avait pas la même avance technologique que l&apos;Empire Anduin, 
-                ce qui conduisit à de nombreuses défaites lors des premiers affrontements. 
-                Les soldats de l&apos;Empire utilisaient des armes à feu très efficaces : 
+                L&apos;alliance n&apos;avait pas la même avance technologique que l&apos;Empire Anduin,
+                ce qui conduisit à de nombreuses défaites lors des premiers affrontements.
+                Les soldats de l&apos;Empire utilisaient des armes à feu très efficaces :
                 pistolets à silex, canons et mousquets.
               </p>
             </div>
@@ -93,9 +93,9 @@ export default function HistoirePage() {
               <span className="text-primary font-bold">Adaptation</span>
               <h3 className="text-xl font-bold text-foreground mt-1 mb-3">La Contre-Offensive Magique</h3>
               <p className="text-foreground/70">
-                Les membres de l&apos;alliance durent adapter leurs stratégies et se concentrer 
-                sur l&apos;utilisation de la magie. Sorts de camouflage pour tendre des embuscades, 
-                sorts de protection contre les projectiles... Peu à peu, ils comprirent les 
+                Les membres de l&apos;alliance durent adapter leurs stratégies et se concentrer
+                sur l&apos;utilisation de la magie. Sorts de camouflage pour tendre des embuscades,
+                sorts de protection contre les projectiles... Peu à peu, ils comprirent les
                 faiblesses des armes à feu.
               </p>
             </div>
@@ -104,9 +104,9 @@ export default function HistoirePage() {
               <span className="text-anduin font-bold">Guerre d&apos;usure</span>
               <h3 className="text-xl font-bold text-foreground mt-1 mb-3">L&apos;Avantage de la Production</h3>
               <p className="text-foreground/70">
-                L&apos;Empire Anduin avait une capacité de production plus élevée pour ses armes 
-                à feu, lui permettant de remplacer rapidement les pertes. À l&apos;inverse, 
-                l&apos;alliance avait besoin de temps pour former des mages — chaque perte 
+                L&apos;Empire Anduin avait une capacité de production plus élevée pour ses armes
+                à feu, lui permettant de remplacer rapidement les pertes. À l&apos;inverse,
+                l&apos;alliance avait besoin de temps pour former des mages — chaque perte
                 était une perte de plusieurs années.
               </p>
             </div>
@@ -115,7 +115,7 @@ export default function HistoirePage() {
               <span className="text-accent font-bold">Fin du premier siècle</span>
               <h3 className="text-xl font-bold text-foreground mt-1 mb-3">L&apos;Impasse</h3>
               <p className="text-foreground/70">
-                Aucune avancée ne fut très concluante pour les deux camps. La guerre 
+                Aucune avancée ne fut très concluante pour les deux camps. La guerre
                 s&apos;enlisa pendant des décennies, avec des victoires et des défaites de chaque côté.
               </p>
             </div>
@@ -124,8 +124,8 @@ export default function HistoirePage() {
               <span className="text-anduin font-bold">L&apos;Avancée Perçante</span>
               <h3 className="text-xl font-bold text-foreground mt-1 mb-3">Skarlet et ses Sœurs</h3>
               <p className="text-foreground/70">
-                L&apos;arrivée de Skarlet et ses sœurs en tant que générales d&apos;armée d&apos;Anduin 
-                fit progresser la ligne de front à une vitesse affolante. Un long chemin 
+                L&apos;arrivée de Skarlet et ses sœurs en tant que générales d&apos;armée d&apos;Anduin
+                fit progresser la ligne de front à une vitesse affolante. Un long chemin
                 vers Sylvestri devint possible, et ils arrivaient enfin vers la frontière...
               </p>
             </div>
@@ -134,8 +134,8 @@ export default function HistoirePage() {
               <span className="text-primary font-bold">Le Retournement</span>
               <h3 className="text-xl font-bold text-foreground mt-1 mb-3">Le Coup d&apos;État de Skarlet</h3>
               <p className="text-foreground/70">
-                Dans un retournement inattendu, la générale Skarlet mena un coup d&apos;État 
-                contre l&apos;Empereur. Elle rassembla une faction loyale et attaqua le palais 
+                Dans un retournement inattendu, la générale Skarlet mena un coup d&apos;État
+                contre l&apos;Empereur. Elle rassembla une faction loyale et attaqua le palais
                 impérial par surprise, renversant le dirigeant et prenant le pouvoir.
               </p>
             </div>
@@ -145,14 +145,14 @@ export default function HistoirePage() {
         {/* End of War */}
         <section className="mb-16">
           <SectionTitle title="Le Grand Accord de Sylvarin" subtitle="La fin d'une ère de destruction" />
-          
+
           <div className="bg-gradient-to-br from-primary/10 via-sylvestri/10 to-anduin/10 border border-primary/30 rounded-xl p-8">
             <p className="text-foreground/70 text-lg mb-6">
-              Après sa prise de pouvoir, Skarlet proposa une trêve aux royaumes de Meltoria 
-              et Sylvestri, offrant de mettre fin à la guerre. Devant l&apos;incertitude de la 
+              Après sa prise de pouvoir, Skarlet proposa une trêve aux royaumes de Meltoria
+              et Sylvestri, offrant de mettre fin à la guerre. Devant l&apos;incertitude de la
               situation, les deux royaumes acceptèrent, espérant une paix durable.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-4xl mb-2">⚔️</div>
@@ -173,10 +173,45 @@ export default function HistoirePage() {
           </div>
         </section>
 
+        {/* Recent Events */}
+        <section className="mb-16">
+          <SectionTitle title="Événements Récents" subtitle="L'histoire en marche" />
+
+          <div className="space-y-8">
+            <div className="bg-black/40 border-l-4 border-primary rounded-r-xl p-6">
+              <span className="text-primary font-bold">Récemment</span>
+              <h3 className="text-xl font-bold text-foreground mt-1 mb-3">Le Massacre du Culte d'Eldritch</h3>
+              <p className="text-foreground/70">
+                Dans la capitale de Meltoria, un culte mystérieux prêchant un message dangereux a été traqué et éradiqué.
+                La prêtresse Emily Morgan est en fuite, et quelques survivants se cachent encore.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border-l-4 border-orange-500 rounded-r-xl p-6">
+              <span className="text-orange-500 font-bold">Menace Aérienne</span>
+              <h3 className="text-xl font-bold text-foreground mt-1 mb-3">Les Attaques de Dragons</h3>
+              <p className="text-foreground/70">
+                Des villes entières ont été détruites par des attaques coordonnées de dragons. Des &quot;Porteurs de Mort&quot;
+                comme Chaldryd ont sévi, et ces créatures intelligentes gèrent même des camps de prisonniers.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border-l-4 border-anduin rounded-r-xl p-6">
+              <span className="text-anduin font-bold">Violation du Traité</span>
+              <h3 className="text-xl font-bold text-foreground mt-1 mb-3">La Prise d'Astra</h3>
+              <p className="text-foreground/70">
+                Fragilisant la paix de 19 ans, <strong>Belarius Mephiston</strong>, général d'Anduin, a conquis
+                la ville de Meltoria nommée <strong>Astra</strong>. Il s'est autoproclamé Marquis et a fortifié la zone,
+                relançant les tensions entre les deux royaumes.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Aftermath */}
         <section>
           <SectionTitle title="L'Après-Guerre" subtitle="19 ans de paix fragile" />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-black/40 border border-primary/30 rounded-xl p-6">
               <h3 className="text-xl font-bold text-primary mb-4">✨ Ce qui a changé</h3>
@@ -199,7 +234,7 @@ export default function HistoirePage() {
                 </li>
               </ul>
             </div>
-            
+
             <div className="bg-black/40 border border-accent/30 rounded-xl p-6">
               <h3 className="text-xl font-bold text-accent mb-4">⚠️ Les Tensions Persistantes</h3>
               <ul className="space-y-3 text-foreground/70">
@@ -225,7 +260,7 @@ export default function HistoirePage() {
 
           <div className="mt-8 text-center">
             <p className="text-foreground/60 italic">
-              &quot;Ce conflit a eu lieu il y a 19 ans maintenant. Les pays se reconstruisent 
+              &quot;Ce conflit a eu lieu il y a 19 ans maintenant. Les pays se reconstruisent
               tout en gardant une atmosphère de paix. Mais pour combien de temps ?&quot;
             </p>
           </div>

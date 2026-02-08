@@ -246,6 +246,62 @@ export default function SylvestriPage() {
         </div>
       </section>
 
+      {/* Factions */}
+      <section className="py-16 px-4 bg-black/30">
+        <div className="max-w-6xl mx-auto">
+          <SectionTitle title="Lieux et Factions Discrets" subtitle="Les secrets de la forêt" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-black/40 border border-sylvestri/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-sylvestri mb-2">⚓ Baronnie de Befohrt</h3>
+              <p className="text-foreground/70">
+                Située sur l'<strong>Île de la Virgule</strong> au Nord-Ouest. Dirigée par la famille <strong>Levonhardt</strong> (Isadora),
+                cette île prospère grâce à la pêche et est protégée par une flotte corsaire.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-sylvestri/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-sylvestri mb-2">✨ Famille Magikus</h3>
+              <p className="text-foreground/70">
+                Une haute famille noble elfique résidant dans la région de <strong>Keatheile</strong>, réputée pour ses
+                puissants mages.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-sylvestri/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-sylvestri mb-2">🦋 La Colonie de l'Ancêtre</h3>
+              <p className="text-foreground/70">
+                Un groupe terrifiant tapi dans les profondeurs de <strong>Sylvanea</strong>. Une entité insectoïde
+                assimile ses victimes pour en faire partie de sa &quot;colonie&quot;.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-sylvestri/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-sylvestri mb-2">🔭 Les Astriens</h3>
+              <p className="text-foreground/70">
+                Une communauté d'elfes noirs astrologues vénérant les étoiles et cherchant un sens à leur existence
+                dans les cieux nocturnes.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-sylvestri/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-sylvestri mb-2">🧘 Temple de l'Esprit</h3>
+              <p className="text-foreground/70">
+                Un lieu de culte et d'apaisement géré par Felin Von Sparda, dédié à la maîtrise de soi et de l'esprit.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-sylvestri/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-sylvestri mb-2">😈 Les Lilims</h3>
+              <p className="text-foreground/70">
+                Une faction (ou race) démoniaque récemment arrivée, cherchant à nouer des alliances diplomatiques
+                avec certaines familles humaines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Navigation */}
       <section className="py-16 px-4 bg-black/30">
         <div className="max-w-4xl mx-auto text-center">

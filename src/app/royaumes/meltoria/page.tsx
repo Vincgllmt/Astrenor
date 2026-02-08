@@ -166,6 +166,76 @@ export default function MeltoriaPage() {
         </div>
       </section>
 
+      {/* Factions */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <SectionTitle title="Factions et Organisations" subtitle="Les forces qui façonnent le royaume" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-black/40 border border-meltoria/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-meltoria mb-2">🩸 Le Culte d'Eldritch</h3>
+              <p className="text-foreground/70">
+                Un culte mystérieux récemment traqué et éradiqué dans la capitale. Ils prêchaient un message
+                séduisant mais dangereux. Quelques survivants, comme l'apôtre Emily Morgan, sont toujours en fuite.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-meltoria/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-meltoria mb-2">🗡️ Famille Yeomford</h3>
+              <p className="text-foreground/70">
+                Une famille noble puissante. Sa <strong>4ème branche</strong> est spécialisée dans l'assassinat
+                et le mercenariat, dirigeant une élite guerrière nommée &quot;Les Dix&quot;.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-meltoria/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-meltoria mb-2">💄 Maison Marlaan</h3>
+              <p className="text-foreground/70">
+                Une maison noble récente et richissime, dirigée par Madame Marlaan (en réalité Alyzée, une succube).
+                Elle contrôle de nombreuses ressources et dispose d'un vaste réseau d'influence officieux.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-meltoria/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-meltoria mb-2">⛰️ Clan Ombresang</h3>
+              <p className="text-foreground/70">
+                Barbares vivant en autarcie dans les montagnes. Fiers et primitifs, ils vénèrent une &quot;Déesse Rouge&quot;
+                et sont dirigés par un Élu.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-meltoria/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-meltoria mb-2">🛡️ Famille Marmonthicy</h3>
+              <p className="text-foreground/70">
+                Comtes d'une région frontalière ayant lourdement souffert de la guerre. Ils sont connus pour leur résilience
+                face à l'Empire d'Anduin.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-meltoria/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-meltoria mb-2">🕶️ Les Dagues de Sicars</h3>
+              <p className="text-foreground/70">
+                Une guilde d'assassins clandestine opérant sous la couverture du &quot;Consortium de l’Ombre Feutrée&quot;.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-meltoria/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-meltoria mb-2">💰 Famille Morgan</h3>
+              <p className="text-foreground/70">
+                Famille noble de la capitale dirigeant une puissante guilde marchande. Parents d'Emily, la prêtresse d'Eldritch renégate.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-meltoria/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-meltoria mb-2">🌘 Les Fils de l'Éclipse</h3>
+              <p className="text-foreground/70">
+                Une secte du Nord vénérant la mort et l'Orphelin, pratiquant des rituels sanglants et des combats à mort.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Religion */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">

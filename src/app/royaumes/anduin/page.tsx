@@ -276,6 +276,47 @@ export default function AnduinPage() {
         </div>
       </section>
 
+      {/* Factions */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <SectionTitle title="Factions et Organisations" subtitle="Les piliers de l'Empire" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-black/40 border border-anduin/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-anduin mb-2">🎖️ Famille Mephiston</h3>
+              <p className="text-foreground/70">
+                Une lignée de généraux impériaux légendaires. <strong>Belarius Mephiston</strong> a récemment conquis
+                la ville de Meltoria nommée <strong>Astra</strong>, s'autoproclamant Marquis et fortifiant la zone avec de l'artillerie lourde.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-anduin/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-anduin mb-2">⚒️ Nains d'Anduin</h3>
+              <p className="text-foreground/70">
+                Vivant dans des citadelles fortifiées, ils sont les maîtres incontestés de la vapeur, de la poudre
+                et de l'ingénierie (canons, arquebuses). Ils sont de fidèles alliés de l'Empire.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-anduin/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-anduin mb-2">🐉 Famille Nécéron</h3>
+              <p className="text-foreground/70">
+                Une famille mystérieuse vivant à la frontière. Ce sont en réalité des dragons (ou demi-dragons)
+                vivant sous forme humaine.
+              </p>
+            </div>
+
+            <div className="bg-black/40 border border-anduin/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-anduin mb-2">⛓️ Famille Schwartzmann</h3>
+              <p className="text-foreground/70">
+                Une famille noble impliquée dans un vaste réseau de trafic humain, fournissant parfois
+                de la main-d'œuvre forcée ou des soldats à l'Empire.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Demons */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
