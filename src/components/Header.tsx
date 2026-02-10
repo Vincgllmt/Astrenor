@@ -6,8 +6,8 @@ import ThemeSelector from './ThemeSelector';
 
 const navigation = [
   { name: 'Accueil', href: '/' },
-  { 
-    name: 'Royaumes', 
+  {
+    name: 'Royaumes',
     href: '/royaumes',
     submenu: [
       { name: 'Meltoria', href: '/royaumes/meltoria' },
@@ -19,13 +19,14 @@ const navigation = [
   { name: 'Magie', href: '/magie' },
   { name: 'Les Enfers', href: '/enfers' },
   { name: 'Religion', href: '/religion' },
-  { 
-    name: 'Encyclopédie', 
+  {
+    name: 'Encyclopédie',
     href: '/races',
     submenu: [
       { name: 'Races', href: '/races' },
       { name: 'Bestiaire', href: '/bestiaire' },
       { name: 'Légendes', href: '/legendes' },
+      { name: 'Quêtes', href: '/quetes' },
     ]
   },
 ];
@@ -49,8 +50,8 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navigation.map((item) => (
-              <div 
-                key={item.name} 
+              <div
+                key={item.name}
                 className="relative"
                 onMouseEnter={() => setActiveSubmenu(item.name)}
                 onMouseLeave={() => setActiveSubmenu(null)}
@@ -62,7 +63,7 @@ export default function Header() {
                   {item.name}
                   <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
                 </Link>
-                
+
                 {item.submenu && activeSubmenu === item.name && (
                   <div className="absolute top-full left-0 mt-2 w-48 bg-black/95 border border-primary-dark rounded-lg shadow-xl overflow-hidden">
                     {item.submenu.map((subitem) => (
@@ -78,7 +79,7 @@ export default function Header() {
                 )}
               </div>
             ))}
-            
+
             {/* Theme Selector */}
             <div className="ml-4">
               <ThemeSelector />
@@ -128,7 +129,7 @@ export default function Header() {
                 )}
               </div>
             ))}
-            
+
             {/* Mobile Theme Selector */}
             <div className="px-4 py-3 border-t border-primary-dark/50 flex items-center justify-between">
               <span className="text-foreground/60 text-sm">Thème</span>
