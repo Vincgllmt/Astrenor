@@ -3,6 +3,7 @@
 /* Theme: Meltoria (Gold - Default) */
 :root,
 [data-kingdom="meltoria"] {
+  color-scheme: dark;
   --background: #0a0a0a;
   --foreground: #e8e5dc;
   --foreground-muted: #b8b4a8;
@@ -21,6 +22,7 @@
 
 /* Theme: Sylvestri (Forest Green) */
 [data-kingdom="sylvestri"] {
+  color-scheme: dark;
   --background: #080a08;
   --foreground: #dce8dc;
   --foreground-muted: #a8b8a8;
@@ -39,6 +41,7 @@
 
 /* Theme: Anduin (Imperial Brown/Cold) */
 [data-kingdom="anduin"] {
+  color-scheme: dark;
   --background: #0a0908;
   --foreground: #e0dcd8;
   --foreground-muted: #b0a89f;
@@ -76,10 +79,12 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--background);
 }
 
 body {
   background: linear-gradient(180deg, var(--background) 0%, #151210 50%, var(--background) 100%);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
