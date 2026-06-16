@@ -27,6 +27,7 @@ const navigation = [
       { name: 'Bestiaire', href: '/bestiaire' },
       { name: 'Légendes', href: '/legendes' },
       { name: 'Quêtes', href: '/quetes' },
+      { name: 'Almanach', href: '/almanach' },
     ]
   },
 ];
