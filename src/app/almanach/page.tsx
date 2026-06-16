@@ -33,7 +33,7 @@ const potions = [
     couleur: 'Gris opalescent',
     origine: 'Sylvestri',
     effet: 'Ouvre brièvement le Troisième Regard, permettant d\'apercevoir les esprits, ombres et entités invisibles.',
-    note: 'Utilisée par les chamanes sylvestri lors des rites de communion. Provoque parfois des visions incontrôlées.',
+    note: 'Utilisée par les chamanes de Sylvestri lors des rites de communion. Provoque parfois des visions incontrôlées.',
     icon: '👁️',
     borderColor: 'border-purple-500/40',
     textColor: 'text-purple-400',
@@ -44,7 +44,7 @@ const potions = [
     couleur: 'Orange incandescent',
     origine: 'Anduin',
     effet: 'Dope la résistance physique et la force brute. La peau devient temporairement dure comme du métal refroidi.',
-    note: 'Inventé par les alchimistes nains d\'Anduin. Contre-indiqué chez les utilisateurs de magie — bloque le flux éthérique.',
+    note: 'Inventé par les alchimistes nains. Contre-indiqué chez les utilisateurs de magie, bloque le flux éthérique.',
     icon: '⚙️',
     borderColor: 'border-orange-500/40',
     textColor: 'text-orange-400',
@@ -87,7 +87,7 @@ const boissons = [
     type: 'Bière',
     royaume: 'Anduin',
     description: 'Bière ambrée épaisse brassée par les nains d\'Anduin à base de céréales nordiques et de mousses glaciaires. Brûle en descendant.',
-    anecdote: '"Ça réchauffe autant qu\'une turbine à vapeur" — expression populaire anduite.',
+    anecdote: '"Ça réchauffe autant qu\'une turbine à vapeur" - expression populaire anduinoise.',
     icon: '🍺',
   },
   {
@@ -122,6 +122,14 @@ const boissons = [
     anecdote: 'Les soldats anduins en emportent toujours lors des patrouilles hivernales. Surnommé "le sang du Nord".',
     icon: '❄️',
   },
+  {
+    nom: 'Vin tempête',
+    type: 'Alcool',
+    royaume: 'Sylvestri',
+    description: 'Spécialité de Lily Cornelis, vin pétillant avec des effets parfois aléatoire',
+    anecdote: 'Peu guérir de la folie, ou la provoquer',
+    icon: '🍷',
+  }
 ];
 
 const repas = [
@@ -148,7 +156,7 @@ const repas = [
     type: 'Encas',
     royaume: 'Sylvestri',
     ingredients: 'Farine de glands sylvestri, mousse de chêne, miel de forêt',
-    description: 'Galettes épaisses et nutritives préparées par les elfes sylvestri. Se conservent des semaines sans se détériorer.',
+    description: 'Galettes épaisses et nutritives préparées par les elfes. Se conservent des semaines sans se détériorer.',
     prix: '2 bronzes',
     icon: '🫓',
   },
@@ -269,7 +277,7 @@ const jurons = [
   { juron: '"Par les Enfers ouverts !"', usage: 'Exclamation de surprise ou de colère vive. Équivalent d\'un juron fort.', icon: '🔥' },
   { juron: '"Sang de griffeau !"', usage: 'Frustration légère, utilisable en société. Jeu de mots sur le griffeau (animal banal de Meltoria).', icon: '🐦' },
   { juron: '"Que la Brume te prenne !"', usage: 'Malédiction grave. Souhaiter à quelqu\'un de se perdre dans la brume sylvestri — une mort lente et solitaire.', icon: '🌫️' },
-  { juron: '"Forge et cendres !"', usage: 'Exclamation de dépit ou d\'échec retentissant. Populaire dans les provinces anduites.', icon: '⚒️' },
+  { juron: '"Forge et cendres !"', usage: 'Exclamation de dépit ou d\'échec retentissant. Populaire dans les provinces anduinoises.', icon: '⚒️' },
   { juron: '"Par la Mère voilée !"', usage: 'Serment solennel ou exclamation de stupeur. Référence à la déesse Mère de Meltoria.', icon: '🌒' },
   { juron: '"T\'es qu\'un Marchombre sans ombre !"', usage: 'Insult désignant quelqu\'un de prétentieux, qui se croit important mais n\'a aucune substance.', icon: '👤' },
 ];
@@ -293,7 +301,7 @@ export default function AlmanachPage() {
           </h1>
           <p className="text-foreground/70 max-w-3xl mx-auto text-lg">
             Recueil des termes, saveurs, formules et coutumes du monde connu. Potions des apothicaires,
-            boissons des tavernes, repas des peuples, expressions forgées au fil des siècles —
+            boissons des tavernes, repas des peuples, expressions forgées au fil des siècles,
             tout ce que le voyageur averti doit connaître avant de fouler ces terres.
           </p>
           <div className="mt-6 flex items-center justify-center gap-2 text-foreground/40 text-sm">
@@ -522,7 +530,7 @@ export default function AlmanachPage() {
             de ses propres mots. Le voyageur qui lit ces pages n&apos;y trouvera qu&apos;un fragment
             de ce que le monde a à dire.&quot;
           </p>
-          <p className="text-foreground/25 text-xs mt-3">— Archiviste Solenne Daureille, Académie d&apos;Étherium, an 312</p>
+          <p className="text-foreground/25 text-xs mt-3">— Archiviste Solenne Daureille, Académie d&apos;Étherium</p>
         </div>
 
         {/* Navigation bas de page */}
