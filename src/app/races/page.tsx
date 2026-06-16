@@ -393,6 +393,23 @@ export default function RacesPage() {
           </div>
         </section>
 
+        {/* Races Astrales */}
+        <section className="mb-16">
+          <SectionTitle title="Races Astrales" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <RaceCard
+                name="Démonides Astrales"
+                icon="🌑"
+                description="Créatures astrales, on les trouve sur Oryn, le satellite naturel. Ils ressemblent aux démons mais en sont différents dans la texture : leurs griffes, cornes et queues semblent éthérés. Ils se nourrissent des émotions des êtres vivants. On en croise parfois lors de soirées de comètes, s'écrasant sur Astrenor."
+                capacity="Manipulation de la gravité et de l'énergie astrale. Peuvent se téléporter sur de courtes distances et devenir intangibles."
+                origin="Oryn"
+                lifespan="300 ans"
+                color="orange"
+            />
+          </div>
+        </section>
+
         {/* Navigation */}
         <section>
           <div className="text-center">
