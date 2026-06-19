@@ -15,6 +15,7 @@ const navigation = [
       { name: 'Anduin', href: '/royaumes/anduin' },
     ]
   },
+  { name: 'Carte', href: '/carte' },
   { name: 'Histoire', href: '/histoire' },
   { name: 'Magie', href: '/magie' },
   { name: 'Les Enfers', href: '/enfers' },
