@@ -133,15 +133,15 @@ const boissons = [
   {
     nom: 'Bad Touch',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Aigre et vintage. Un cocktail qui ne mâche pas ses mots.',
-    anecdote: 'Son nom dit tout. Idéal pour ceux qui veulent une expérience mémorable — dans tous les sens du terme.',
+    anecdote: 'Son nom dit tout. Idéal pour ceux qui veulent une expérience mémorable dans tous les sens du terme.',
     icon: '🍋',
   },
   {
     nom: 'Bleeding Jane',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Épicé, classique et dégrisant. Un incontournable de la taverne.',
     anecdote: 'Réputée pour dissiper l\'ivresse aussi vite qu\'elle l\'installe. Prisée des mercenaires en mission qui ne peuvent pas se permettre de flancher.',
     icon: '🌶️',
@@ -149,7 +149,7 @@ const boissons = [
   {
     nom: 'Bloom Light',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Épicé, fade et cher pour ce que c\'est. Les premiers verres relèvent les papilles, mais plus on en boit, plus le goût se transforme en sable pur.',
     anecdote: 'Les habitués disent que c\'est une métaphore de l\'existence. Les nouveaux venus disent qu\'ils se sont fait arnaquer.',
     icon: '🏜️',
@@ -165,15 +165,15 @@ const boissons = [
   {
     nom: 'Brandtini',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Doux et élégant. Un cocktail raffiné, favori de certaines femmes de goût.',
-    anecdote: 'On reconnaît les habituées à leur façon de tenir le verre — deux doigts, poignet relevé, regard assuré.',
+    anecdote: 'On reconnaît les habituées à leur façon de tenir le verre : deux doigts, poignet relevé, regard assuré.',
     icon: '🍸',
   },
   {
     nom: 'Cobalt Velvet',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Pétillant, classe et brûlant. Décrit comme du champagne servi dans une tasse où traînerait un fond de cola.',
     anecdote: 'La couleur cobalt profonde impressionne à chaque fois. Le goût, lui, provoque rarement la même réaction deux fois.',
     icon: '💙',
@@ -181,7 +181,7 @@ const boissons = [
   {
     nom: 'Crevice Spike',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Acide, viril et dégrisant. Un verre aux effets imprévisibles : soit il vous enlève l\'ivresse, soit il vous assomme complètement.',
     anecdote: 'Commandez-en un en fin de soirée à vos propres risques. Aucune garantie sur le résultat.',
     icon: '⚡',
@@ -197,7 +197,7 @@ const boissons = [
   {
     nom: 'Fringe Weaver',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Pétillant, élégant et fort. L\'équivalent d\'alcool éthylique agrémenté d\'une cuillerée de sucre. Ne vous y fiez pas.',
     anecdote: 'Présenté dans un verre fin et sophistiqué. Ce qu\'il y a à l\'intérieur, en revanche, est tout sauf raffiné.',
     icon: '🌀',
@@ -205,7 +205,7 @@ const boissons = [
   {
     nom: 'Frothy Water',
     type: 'Fausse bière',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Pétillant, classique et totalement sans alcool. Pour ceux qui veulent avoir l\'air de boire sans en subir les conséquences.',
     anecdote: 'Commandez-en un et observez les vrais buveurs vous regarder avec un mélange de pitié et de respect silencieux.',
     icon: '🫧',
@@ -213,7 +213,7 @@ const boissons = [
   {
     nom: 'Gut Punch',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Son nom est parlant.',
     anecdote: 'Il n\'y a pas grand chose à ajouter. Ceux qui en ont bu comprennent. Ceux qui n\'en ont pas bu... comprendront.',
     icon: '👊',
@@ -221,7 +221,7 @@ const boissons = [
   {
     nom: 'Hellblast',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Épicé, viril et fort. Un seul verre suffit à rougir votre visage autant que les démons qu\'on imagine dans les Enfers.',
     anecdote: 'Populaire parmi les soldats et les fanfarons. Moins populaire auprès de leurs médecins.',
     icon: '🔥',
@@ -229,7 +229,7 @@ const boissons = [
   {
     nom: 'Anduinblast',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Anduin',
     description: 'Acide, classe et brûlant. Un hommage fougueux aux terres du Nord.',
     anecdote: 'Certains soldats d\'Anduin refusent d\'en boire par principe. D\'autres le commandent par nostalgie.',
     icon: '⚙️',
@@ -237,7 +237,7 @@ const boissons = [
   {
     nom: 'Moonblast',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Doux, joyeux et ouvertement "girly". Une boisson pleine de bonne humeur.',
     anecdote: 'Commander un Moonblast en groupe garantit généralement une bonne ambiance. Le commander seul en fin de nuit envoie un tout autre message.',
     icon: '🌙',
@@ -245,7 +245,7 @@ const boissons = [
   {
     nom: 'Piano Man',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Meltoria',
     description: 'Acide, cher et fort. Le pendant masculin du Piano Woman, pour ceux qui veulent souffrir avec élégance.',
     anecdote: 'Souvent commandé en duo avec le Piano Woman lors des soirées en couple. Le contraste des réactions est toujours divertissant.',
     icon: '🎹',
@@ -253,7 +253,7 @@ const boissons = [
   {
     nom: 'Piano Woman',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Meltoria',
     description: 'Doux, cher et joyeux. Un cocktail festif au prix qui rappelle qu\'on est là pour passer une bonne soirée.',
     anecdote: 'Son pendant masculin existe. Les opinions divergent sur lequel est le meilleur investissement.',
     icon: '🎵',
@@ -261,7 +261,7 @@ const boissons = [
   {
     nom: 'Piledriver',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Anduin',
     description: 'Amer, viril et brûlant. La brûlure épargne la langue mais s\'attaque à la gorge — mieux vaut ne pas être enrhumé ce soir-là.',
     anecdote: 'Conseillé aux amateurs d\'expériences intenses. Déconseillé à ceux qui ont une présentation importante le lendemain matin.',
     icon: '🔩',
@@ -269,7 +269,7 @@ const boissons = [
   {
     nom: 'Sparkle Star',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Doux, joyeux et spectaculaire. Pétille à la fois en bouche et visuellement — un verre qui fait son entrée dans la pièce.',
     anecdote: 'Impossible de le commander discrètement. Les étincelles visibles dans le verre attirent tous les regards de la salle.',
     icon: '✨',
@@ -277,7 +277,7 @@ const boissons = [
   {
     nom: 'Sunshine Cloud',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Sylvestri',
     description: 'Amer, féminin et doux. Goût de vieux lait chocolaté dont le bon parfum serait intact, avec des notes de caramel selon certains.',
     anecdote: 'Un des rares cocktails amers qui séduisent autant les novices que les connaisseurs. Le paradoxe savoureux de la taverne.',
     icon: '☀️',
@@ -285,7 +285,7 @@ const boissons = [
   {
     nom: 'Suplex',
     type: 'Cocktail',
-    royaume: 'Taverne de Sylvanea',
+    royaume: 'Anduin',
     description: 'Amer, viril et brûlant. Variante du Piledriver qui cible davantage la langue que la gorge — une autre façon de souffrir.',
     anecdote: 'Les habitués du Piledriver le commandent pour "changer". Ils regrettent généralement leur curiosité.',
     icon: '💥',
@@ -295,7 +295,7 @@ const boissons = [
     type: 'Spécialité maison',
     royaume: 'Taverne de Sylvanea',
     description: "La spécialité de Rin. Un alcool fourbe et plein de goût qui pétille en bouche et peut assommer même un habitué confirmé.",
-    anecdote: "Rin ne révèle jamais la recette. On dit qu'elle change selon l'humeur de la soirée — et selon qui elle veut mettre à genoux.",
+    anecdote: "Rin ne révèle jamais la recette. On dit qu'elle change selon l'humeur de la soirée.. Et selon qui elle veut mettre à genoux.",
     icon: '😈',
   },
 ];
