@@ -35,7 +35,7 @@ export const villes: Ville[] = [
     description:
       "La cité impériale d'Anduin, cœur battant de l'empire mécanique. Ravengulch est une métropole de métal et de vapeur où les engrenages ne s'arrêtent jamais. L'Impératrice Skarlet y tient son palais d'acier et de verre.",
     coutumes: [
-      "L'heure est régie par les grandes horloges mécaniques de la place centrale — arriver en retard est une insulte.",
+      "L'heure est régie par les grandes horloges mécaniques de la place centrale - arriver en retard est une insulte.",
       "Les salutations se font en touchant l'emblème impérial porté sur la poitrine droite.",
       "Les repas sont minutés : un sablier d'acier trône sur chaque table et nul ne mange après la dernière minute écoulée.",
       "Le port d'une arme à feu visible signifie que l'on est en service actif pour l'empire.",
@@ -122,7 +122,7 @@ export const villes: Ville[] = [
       "Centre d'extraction et de raffinage des minerais rares. Haufen approvisionne les forges impériales en métaux précieux nécessaires à la fabrication des automates et des armes à feu.",
     coutumes: [
       "Les forgerons portent un tablier noir cousu d'un fil d'or pour signifier leur rang.",
-      "Le son des marteaux est considéré comme une musique sacrée — s'y opposer est un outrage.",
+      "Le son des marteaux est considéré comme une musique sacrée - s'y opposer est un outrage.",
       "Un apprenti n'a le droit de forger sa première pièce qu'après trois ans d'observation.",
     ],
     pointsInteret: ["Les Fonderies Impériales", "Le Marché des Minerais", "La Galerie d'Extraction"],
@@ -162,13 +162,19 @@ export const villes: Ville[] = [
     x: 23, y: 64,
     icon: '⚓',
     description:
-      "Ville portuaire de la côte ouest de Meltoria, Befohrt est un carrefour commercial entre les îles et le continent. Son marché aux poissons et ses tavernes animées en font une escale incontournable.",
+      "Île quasi sauvage près de Majestia, théoriquement colonie meltorienne, devenue un repaire de pirates notoire. Ses côtes sont de longues falaises bordées de récifs qui rendent la navigation impossible aux non-initiés, et un brouillard épais transforme souvent la mer en piège mortel. Maints capitaines refusent d'en approcher. En surface de l'eau, sous les falaises, des grottes dissimulent d'innombrables cachettes de pirates. La ville elle-même est animée et sympathique pour qui a du cran, à condition de surveiller sa bourse et d'éviter les ennuis. Au-delà de ses murs, l'île est une jungle vierge peuplée d'animaux colorés uniques à la région.",
     coutumes: [
-      "Les pêcheurs chantent un refrain de bon augure avant de prendre la mer au lever du soleil.",
-      "Les dettes de jeu contractées dans les tavernes de Befohrt sont considérées d'honneur sacré.",
-      "Lancer une pièce de bronze dans le port avant un long voyage assure un retour sain et sauf.",
+      "Un capitaine qui connaît le chemin entre les récifs ne partage jamais cette connaissance librement - c'est sa véritable fortune.",
+      "Dans les tavernes, on paye ses dettes de jeu ou l'on quitte l'île : les créanciers ici ont des arguments convaincants.",
+      "Voler un autre pirate dans l'enceinte de la ville est le seul crime unanimement puni - à l'extérieur, tout est permis.",
+      "Les nouveaux arrivants doivent offrir une tournée générale à la taverne la plus proche : c'est le droit d'entrée non officiel.",
     ],
-    pointsInteret: ["Le Port de Commerce de Befohrt", "Le Marché aux Poissons", "La Taverne du Poulpe"],
+    pointsInteret: [
+      "Les Grottes des Falaises - cachettes de pirates taillées dans la roche",
+      "La Taverne de la Brume - cœur social de la ville",
+      "Le Sentier des Initiés - seule route navigable entre les récifs, jalousement gardée",
+      "La Jungle Vierge de l'Île - faune colorée et endémique",
+    ],
   },
   {
     id: 'gives',
@@ -214,7 +220,7 @@ export const villes: Ville[] = [
     coutumes: [
       "Les chevaliers d'Escren portent toujours leur épée côté gauche, même en tenue civile.",
       "Le tournoi annuel d'Escren est la compétition chevaleresque la plus prestigieuse de Meltoria.",
-      "Un chevalier qui accepte un défi ne peut pas le refuser — le rejeter est une honte à vie.",
+      "Un chevalier qui accepte un défi ne peut pas le refuser - le rejeter est une honte à vie.",
     ],
     pointsInteret: ["La Caserne des Chevaliers d'Escren", "L'Arène du Grand Tournoi", "Le Mur de la Mémoire"],
   },
@@ -228,8 +234,8 @@ export const villes: Ville[] = [
     description:
       "Cité artisanale et commerciale, Marmonthicy est connue pour ses potiers, ses tisserands et ses marchands. Un carrefour de routes commerciales qui en fait l'une des villes les plus animées de Meltoria.",
     coutumes: [
-      "Les artisans signent toujours leurs œuvres d'un symbole personnel — copier ce symbole est un crime.",
-      "Marchander est une tradition sacrée — proposer le prix affiché sans négocier est considéré impoli.",
+      "Les artisans signent toujours leurs œuvres d'un symbole personnel - copier ce symbole est un crime.",
+      "Marchander est une tradition sacrée - proposer le prix affiché sans négocier est considéré impoli.",
       "Un repas partagé avec un étranger dans une échoppe scelle une amitié de voyage.",
     ],
     pointsInteret: ["La Grande Halle des Marchands", "Les Ateliers des Potiers", "Le Pont du Commerce de Marmonthicy"],
@@ -269,23 +275,23 @@ export const villes: Ville[] = [
   {
     id: 'astra',
     nom: 'Astra',
-    royaume: 'meltoria',
+    royaume: 'anduin',
     type: 'forteresse',
     x: 50, y: 37,
     icon: '⛰️',
     description:
-      "Ville-forteresse bâtie à flanc de montagne à la frontière entre Meltoria et Anduin, Astra est le verrou stratégique qui a résisté à toutes les offensives impériales durant la Guerre des Deux Siècles. Ses remparts de roche noire semblent faire corps avec la montagne elle-même.",
+      "Ville fortifiée nichée dans un canyon, seul passage praticable à travers les montagnes de Lassiera. Carrefour incontournable entre les royaumes, Astra abrite une des plus grandes casernes et places d'entraînement de l'Empire d'Anduin - c'est d'ailleurs de là que fut lancée l'offensive de la Grande Guerre. Sa tour de garde, devenue attraction touristique, domine un panorama à couper le souffle sur les sommets environnants.",
     coutumes: [
-      "Les sentinelles ne dorment jamais plus de quatre heures d'affilée — une règle héritée des années de siège.",
-      "Chaque habitant d'Astra, qu'il soit soldat ou marchand, sait manier une arme. L'entraînement est obligatoire dès l'enfance.",
-      "Allumer un feu sur les remparts la nuit est un signal d'alarme — le faire par négligence est puni sévèrement.",
-      "Les étrangers sont tolérés mais surveillés. Nul ne peut séjourner plus de trois jours sans se faire enregistrer auprès du Commandant.",
+      "Tout étranger en transit doit décliner son identité et sa destination au poste de contrôle - Astra ne connaît pas d'anonymes.",
+      "Les marchands côtoient les soldats sans distinction dans les tavernes : la ville est cosmopolite et la hiérarchie militaire reste au seuil des casernes.",
+      "Monter au sommet de la Grande Tour au lever du soleil est un rite de passage pour tout nouveau résident.",
+      "Les duels sont tolérés dans l'arène désignée, mais la bagarre dans les rues vaut une nuit de cellule - l'ordre prime sur tout.",
     ],
     pointsInteret: [
-      "Les Remparts de Roche Noire",
-      "La Salle des Commandants — mémorial des défenseurs d'Astra",
-      "Le Col du Passage — défilé stratégique entre les deux royaumes",
-      "La Forge d'Altitude — armurerie taillée dans la roche",
+      "La Grande Tour de Garde - vue panoramique sur les montagnes de Lassiera",
+      "La Caserne Impériale d'Anduin - l'une des plus grandes de l'Empire",
+      "Le Col du Canon - défilé stratégique et mémorial de la Grande Guerre",
+      "Le Marché du Carrefour - marchandises des trois royaumes en un seul endroit",
     ],
   },
 
@@ -300,14 +306,19 @@ export const villes: Ville[] = [
     x: 83, y: 50,
     icon: '🏜️',
     description:
-      "Cité mystérieuse à l'extrême est du continent, Khareth est une enclave indépendante que nul des trois royaumes n'a jamais pu conquérir. Son peuple est réputé pour ses arts divinatoires et ses marchandises rares introuvables ailleurs.",
+      "Presqu'île désertique techniquement rattachée à Meltoria, Khareth vit dans une indépendance de fait que les deux partis semblent apprécier. Terre d'excellence artisanale, elle abrite les verriers, sculpteurs et enchanteurs les plus réputés du continent. Ses marchands intrépides sillonnent le monde entier en caravane, exportant œuvres d'art, objets magiques et venin de S'nek, et rapportant des marchandises exotiques jusqu'aux coins les plus reculés d'Astrenor.",
     coutumes: [
-      "Les habitants de Khareth ne révèlent jamais leur nom complet à un étranger — c'est donner prise sur son âme.",
-      "Le thé aux épices est offert à toute personne franchissant les portes de la cité en signe de paix.",
-      "Les transactions se font en silence, par signes de la main codifiés.",
-      "Fixer quelqu'un dans les yeux trop longtemps est perçu comme une provocation.",
+      "Les caravanes marchandes de Khareth sont une institution : quitter la cité au moins une fois dans sa vie pour vendre ses œuvres à travers le monde est un rite de passage.",
+      "La richesse générée par le commerce extérieur est redistribuée via un réseau d'entraide intérieur - programmes d'éducation et d'emploi financés collectivement.",
+      "Un artisan qui vend une pièce défectueuse est tenu de rembourser le double de la valeur et de refaire l'objet gratuitement.",
+      "Le venin de S'nek est une denrée réglementée : seuls les négociants agréés par le conseil de la cité ont le droit de le commercer.",
     ],
-    pointsInteret: ["Le Bazar des Curiosités", "Le Temple des Devins", "Les Murs Anciens de Khareth"],
+    pointsInteret: [
+      "Les Ateliers des Maîtres Verriers",
+      "La Galerie des Enchanteurs",
+      "Le Marché aux Caravanes - point de départ de toutes les expéditions commerciales",
+      "Les Élevages de S'nek",
+    ],
   },
   {
     id: 'hatbury',
@@ -317,13 +328,14 @@ export const villes: Ville[] = [
     x: 78, y: 71,
     icon: '🌊',
     description:
-      "Ville portuaire indépendante au sud-est du continent, Hatbury commerce avec les trois royaumes sans appartenir à aucun. Ses marchands sont célèbres pour leur neutralité absolue et leur flair des affaires.",
+      "Ville portuaire de la côte Est, seul débouché maritime de la région dans ces étendues désertiques. Les larges revenus du port sont avidement captés par une poignée de puissants, laissant la population dans une misère palpable. Peu atteignent ici un âge avancé. Les marchands se parent de joyaux, bien gardés par des légions de soldats, pendant que le peuple survit dans la chaleur et la poussière.",
     coutumes: [
-      "Un contrat à Hatbury ne vaut que s'il est signé en présence d'un témoin neutre agréé.",
-      "La couleur jaune est celle des marchands libres — la porter est une marque de respect commercial.",
-      "Menacer un marchand dans son comptoir est punissable par la confiscation de tous ses biens.",
+      "La population générale ne possède pas de nom : un nom se gagne par ses exploits, pas à la naissance.",
+      "Il n'est pas rare que des parents abandonnent leurs enfants dès leur jeune âge, ne pouvant en assumer la charge dans ces conditions extrêmes.",
+      "La solidarité entre pauvres est une loi non écrite et sacrée - partager ce que l'on a avec plus démuni que soi est la seule règle universellement respectée.",
+      "La méfiance envers toute forme d'autorité est profondément ancrée, tant la corruption y est endémique.",
     ],
-    pointsInteret: ["Le Port Neutre de Hatbury", "La Maison du Commerce Libre", "L'Entrepôt des Nations"],
+    pointsInteret: ["Le Port de la Côte Est - unique débouché maritime de la région", "Le Quartier des Marchands - richesse et dorures sous bonne garde", "Les Faubourgs - cœur de la solidarité populaire"],
   },
 
   // ──────────────────────────────────────────
@@ -341,7 +353,7 @@ export const villes: Ville[] = [
     coutumes: [
       "On ne parle qu'à voix basse dans les allées boisées d'Elderwatch.",
       "Planter un arbre est le premier acte exigé de tout nouveau résident de la ville.",
-      "Les anciens du Conseil tranchent tous les litiges — leur parole est loi immuable.",
+      "Les anciens du Conseil tranchent tous les litiges - leur parole est loi immuable.",
       "Couper un arbre vivant sans permission équivaut à un meurtre selon la loi locale.",
     ],
     pointsInteret: ["L'Archive des Anciens d'Elderwatch", "Le Bosquet Sacré", "Le Pont de Lierre Millénaire"],
@@ -358,7 +370,7 @@ export const villes: Ville[] = [
     coutumes: [
       "Les décisions importantes ne se prennent qu'à la pleine lune, réunis sous le ciel ouvert.",
       "Dormir sous les étoiles au moins une nuit par mois est une tradition sacrée pour tout habitant.",
-      "On offre de la lumière — une bougie, une lanterne — plutôt que de l'or aux étrangers de passage.",
+      "On offre de la lumière - une bougie, une lanterne - plutôt que de l'or aux étrangers de passage.",
     ],
     pointsInteret: ["L'Observatoire Lunaire de Siriathian", "Le Lac des Reflets", "La Foire de la Pleine Lune"],
   },
@@ -373,7 +385,7 @@ export const villes: Ville[] = [
       "Siège de l'Académie de Magie Étherium, la plus grande et ancienne école de sorcellerie d'Astrenor. Aewood attire des aspirants mages du monde entier pour ses enseignements et ses archevêques légendaires.",
     coutumes: [
       "Les apprentis mages portent une robe grise jusqu'à leur premier sort réussi en examen.",
-      "Aucune magie destructrice n'est tolérée dans l'enceinte de la ville — l'expulsion est immédiate.",
+      "Aucune magie destructrice n'est tolérée dans l'enceinte de la ville - l'expulsion est immédiate.",
       "Les Archevêques de l'Étherium ont droit à une révérence lorsqu'on les croise dans les rues.",
       "Toute nouvelle découverte magique doit être déclarée à l'Académie avant d'être pratiquée.",
     ],
@@ -407,7 +419,7 @@ export const villes: Ville[] = [
     coutumes: [
       "Cueillir un champignon sans permission du chef herboriste est un délit grave.",
       "Les potions de Keatheile sont scellées à la cire de champignon et reconnaissables à leur parfum unique.",
-      "Les visiteurs reçoivent une potion de bienvenue — la refuser est une offense.",
+      "Les visiteurs reçoivent une potion de bienvenue - la refuser est une offense.",
     ],
     pointsInteret: ["La Forêt de Champignons Luminescents", "L'Atelier des Alchimistes", "Le Marché des Herbes Rares"],
   },
@@ -419,13 +431,13 @@ export const villes: Ville[] = [
     x: 42.5, y: 94,
     icon: '🏡',
     description:
-      "La bourgade mystérieuse et cachée au bord de Sylvestri, entourée d'une immense forêt. Sylvanea est au cœur des aventures des héros d'Astrenor. Nulle trace de ses anciens habitants n'a jamais été trouvée.",
+      "Patelin à l'origine mystérieuse, à moitié en ruines, habité par quelques hurluberlus et gens de passage. Nul ne sait ce qui est arrivé aux anciens habitants. Le gouvernement de Sylvestri n'a même pas connaissance de l'existence du village : c'est une terre de retraite où se retrouvent des marginaux qui peuvent disparaître du jour au lendemain. On n'arrive à Sylvanea qu'au gré de la fortune.",
     coutumes: [
-      "Le village se gouverne par un Conseil des Aînés, dont le renouveau est imminent.",
-      "Les visiteurs sont accueillis avec méfiance mais traités avec honneur s'ils prouvent leur bonne foi.",
-      "Le son des cloches du village annonce les réunions du conseil — tous doivent s'arrêter et écouter.",
-      "Il est interdit de parler des ruines antiques aux étrangers — un tabou ancien et chargé de mystère.",
+      "Nul ne pose de questions sur l'identité ou le passé d'un autre - chacun arrive à Sylvanea pour une raison qui lui appartient.",
+      "Les rares habitants permanents accueillent les nouveaux arrivants sans cérémonie ni méfiance excessive : la survie est une affaire collective.",
+      "Il est de coutume de laisser une marque discrète sur un mur en partant, seul témoignage que l'on a existé ici.",
+      "Les ruines du village ancien sont interdites la nuit - non par loi, mais par une peur tacite et partagée de tous.",
     ],
-    pointsInteret: ["La Maison du Conseil", "La Grande Forêt Environnante", "Le Puits du Village", "Les Ruines Antiques"],
+    pointsInteret: ["Les Ruines de l'Ancien Village", "La Grande Forêt Environnante", "La Taverne des Marginaux - seul bâtiment vraiment entretenu", "Le Puits Central"],
   },
 ];

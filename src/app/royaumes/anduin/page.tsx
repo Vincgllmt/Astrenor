@@ -25,21 +25,6 @@ export default function AnduinPage() {
         </div>
       </section>
 
-      {/* Map */}
-      <section className="py-8 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-anduin/50 shadow-2xl shadow-anduin/20 group">
-            <Image
-              src="/map/carte_anduin.png"
-              alt="Carte du Royaume d'Anduin"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
-          </div>
-        </div>
-      </section>
-
       {/* Overview */}
       <section className="py-16 px-4 bg-black/30">
         <div className="max-w-6xl mx-auto">
@@ -333,6 +318,52 @@ export default function AnduinPage() {
             >
               En savoir plus sur les Enfers →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Culture */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <SectionTitle title="Culture & Société" subtitle="Les valeurs qui façonnent le peuple anduinois" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <div className="space-y-4">
+              <p className="text-foreground/70">
+                La culture anduinoise est <strong className="text-anduin">guerrière et frugale</strong>, d&apos;inspiration scandinave. La force au combat y est célébrée autant qu&apos;un esprit brillant : un savant de renom bénéficie du même respect qu&apos;un général victorieux. La société est profondément égalitaire — le genre et la race importent peu, seul le mérite compte.
+              </p>
+              <p className="text-foreground/60">
+                La liberté individuelle est sacrée, tant que l&apos;on a la force de défendre ses biens et ses droits. Le sentimentalisme est peu présent, remplacé par un pragmatisme assumé. Les hautes sphères font néanmoins exception : elles sont avides d&apos;art et de culture, faisant d&apos;Anduin un mécène discret mais puissant.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <div className="bg-black/40 border border-anduin/30 rounded-xl p-5">
+                <h4 className="text-anduin font-bold mb-2">⚓ Maîtres des Mers</h4>
+                <p className="text-foreground/60 text-sm">Excellents navigateurs, les Anduinois possèdent des navires à la pointe de la technologie. Ils se passent souvent de ports, préférant envoyer des chaloupes à terre plutôt que d&apos;accoster.</p>
+              </div>
+              <div className="bg-black/40 border border-anduin/30 rounded-xl p-5">
+                <h4 className="text-anduin font-bold mb-2">🛒 Commerce Sélectif</h4>
+                <p className="text-foreground/60 text-sm">Ravengulch importe beaucoup : équipement meltorien pour ses forges et vêtements sylvestres pour ses élites. L&apos;exportation reste en revanche jalousement contrôlée.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="bg-black/40 border border-anduin/30 rounded-xl p-5 text-center">
+              <div className="text-3xl mb-2">⚔️</div>
+              <h4 className="text-anduin font-bold mb-1">Méritocratie</h4>
+              <p className="text-foreground/60 text-sm">La position sociale se gagne, jamais héritée. Un enfant de mineur peut devenir général.</p>
+            </div>
+            <div className="bg-black/40 border border-anduin/30 rounded-xl p-5 text-center">
+              <div className="text-3xl mb-2">🔬</div>
+              <h4 className="text-anduin font-bold mb-1">Science & Savoir</h4>
+              <p className="text-foreground/60 text-sm">Un esprit brillant est aussi célébré qu&apos;un bras puissant. Les académies forment autant de savants que de soldats.</p>
+            </div>
+            <div className="bg-black/40 border border-anduin/30 rounded-xl p-5 text-center">
+              <div className="text-3xl mb-2">🗽</div>
+              <h4 className="text-anduin font-bold mb-1">Liberté Individuelle</h4>
+              <p className="text-foreground/60 text-sm">Chacun est libre d&apos;être ce qu&apos;il veut — à condition d&apos;en assumer les conséquences seul.</p>
+            </div>
           </div>
         </div>
       </section>

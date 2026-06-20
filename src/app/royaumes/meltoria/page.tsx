@@ -25,21 +25,6 @@ export default function MeltoriaPage() {
         </div>
       </section>
 
-      {/* Map */}
-      <section className="py-8 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-meltoria/50 shadow-2xl shadow-meltoria/20 group">
-            <Image
-              src="/map/carte_meltoria.png"
-              alt="Carte du Royaume de Meltoria"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
-          </div>
-        </div>
-      </section>
-
       {/* Overview */}
       <section className="py-16 px-4 bg-black/30">
         <div className="max-w-6xl mx-auto">
@@ -290,6 +275,52 @@ export default function MeltoriaPage() {
                 y sont condamnées à être abandonnées et oubliées, se remémorant leurs erreurs
                 pour l&apos;éternité.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Culture */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <SectionTitle title="Culture & Société" subtitle="Les traditions qui unissent le peuple meltorien" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <div className="space-y-4">
+              <p className="text-foreground/70">
+                Meltoria est le pays des mythes et légendes, baigné dans une culture <strong className="text-meltoria">chevaleresque</strong>, celle de l&apos;amour courtois et de l&apos;industrialisme. Les Meltoriens aiment l&apos;ordre, l&apos;entraide et le courage. C&apos;est avant tout une culture d&apos;artisans, d&apos;ouvriers, de mineurs et de fermiers, fiers de leur contribution au royaume.
+              </p>
+              <p className="text-foreground/60">
+                Meltoria se targue d&apos;une riche histoire peuplée de personnages hauts en couleurs, ce qui la rend douée pour transmettre ses traditions aux générations suivantes. Le royaume est <strong className="text-meltoria">très centralisé</strong> autour de Majestia : les villages ont essentiellement un rôle nourricier, alimentant la capitale en produits agricoles et en ressources.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <div className="bg-black/40 border border-meltoria/30 rounded-xl p-5">
+                <h4 className="text-meltoria font-bold mb-2">⚒️ Forgerons de Renom</h4>
+                <p className="text-foreground/60 text-sm">Les forgerons meltoriens sont reconnus comme les meilleurs d&apos;Astrenor. Leur savoir-faire en fait une fierté nationale et une source de revenus considérable à l&apos;export.</p>
+              </div>
+              <div className="bg-black/40 border border-meltoria/30 rounded-xl p-5">
+                <h4 className="text-meltoria font-bold mb-2">🍷 Richesse par l&apos;Export</h4>
+                <p className="text-foreground/60 text-sm">Meltoria exporte ses produits agricoles, ses armes, son vin réputé et ses minéraux à travers tout le continent, faisant de la capitale le hub économique de l&apos;Ouest.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="bg-black/40 border border-meltoria/30 rounded-xl p-5 text-center">
+              <div className="text-3xl mb-2">🛡️</div>
+              <h4 className="text-meltoria font-bold mb-1">Chevalerie</h4>
+              <p className="text-foreground/60 text-sm">La chevalerie est le sommet de l&apos;idéal meltorien : honneur, courage et service du royaume avant tout.</p>
+            </div>
+            <div className="bg-black/40 border border-meltoria/30 rounded-xl p-5 text-center">
+              <div className="text-3xl mb-2">🤝</div>
+              <h4 className="text-meltoria font-bold mb-1">Collectivisme</h4>
+              <p className="text-foreground/60 text-sm">L&apos;entraide et la solidarité sont des valeurs fondamentales. La communauté prime sur l&apos;individu.</p>
+            </div>
+            <div className="bg-black/40 border border-meltoria/30 rounded-xl p-5 text-center">
+              <div className="text-3xl mb-2">🧱</div>
+              <h4 className="text-meltoria font-bold mb-1">Diversité Raciale</h4>
+              <p className="text-foreground/60 text-sm">Les rapports entre races sont parfois complexes, mais les nains sont particulièrement estimés pour leur expertise artisanale.</p>
             </div>
           </div>
         </div>
