@@ -199,14 +199,12 @@ export const villes: Ville[] = [
     x: 32, y: 60,
     icon: '⚖️',
     description:
-      "Importante ville judiciaire de Meltoria, Courtin abrite les grandes cours de justice du royaume et l'Ordre des Légistes. Ses bâtiments de pierre grise inspirent respect et solennité.",
+      "",
     population: "",
     coutumes: [
-      "On ne lève jamais la voix dans les rues de Courtin par respect pour les tribunaux.",
-      "Les avocats et légistes portent une ceinture verte symbolisant leur appartenance à l'Ordre.",
-      "Mentir publiquement est punissable d'un jour de travaux forcés au profit de la cité.",
+        "",
     ],
-    pointsInteret: ["Le Grand Tribunal de Courtin", "L'Ordre des Légistes", "La Prison des Oubliés"],
+    pointsInteret: [],
   },
   {
     id: 'escren',
