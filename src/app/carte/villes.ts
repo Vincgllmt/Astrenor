@@ -10,6 +10,7 @@ export interface Ville {
   y: number; // % depuis le haut
   icon: string;
   description: string;
+  population: string;
   coutumes: string[];
   pointsInteret: string[];
 }
@@ -34,6 +35,7 @@ export const villes: Ville[] = [
     icon: '⚙️',
     description:
       "La cité impériale d'Anduin, cœur battant de l'empire mécanique. Ravengulch est une métropole de métal et de vapeur où les engrenages ne s'arrêtent jamais. L'Impératrice Skarlet y tient son palais d'acier et de verre.",
+    population: "Humains, nains, minorités orcs et démons",
     coutumes: [
       "L'heure est régie par les grandes horloges mécaniques de la place centrale - arriver en retard est une insulte.",
       "Les salutations se font en touchant l'emblème impérial porté sur la poitrine droite.",
@@ -45,6 +47,7 @@ export const villes: Ville[] = [
       "L'Arsenal des Machines",
       "La Grande Horloge de Ravengulch",
       "Le Quartier des Ingénieurs",
+      "Le grand colisée",
     ],
   },
   {
@@ -55,13 +58,12 @@ export const villes: Ville[] = [
     x: 36.25, y: 15,
     icon: '🏭',
     description:
-      "Ville industrielle à l'ouest du territoire d'Anduin, réputée pour ses manufactures de charbon et ses mines de cuivre qui alimentent l'empire en ressources.",
+      "",
+    population: "",
     coutumes: [
-      "Les mineurs portent des badges de rang selon la profondeur atteinte dans les mines.",
-      "Un repas de charbon brûlé symbolique est offert aux nouveaux arrivants en signe de bienvenue.",
-      "Sabrer une bouteille avec un outil de mineur lors des célébrations est de bon augure.",
+      ""
     ],
-    pointsInteret: ["Les Mines de Cuivre", "La Manufacture Centrale", "La Tour de Ventilation"],
+    pointsInteret: [],
   },
   {
     id: 'barrencrag',
@@ -71,13 +73,12 @@ export const villes: Ville[] = [
     x: 65, y: 11,
     icon: '🏔️',
     description:
-      "Forteresse militaire perchée sur les hautes crêtes du nord-est. Barrencrag surveille les frontières orientales d'Anduin et sert de base aux troupes d'élite de l'empire.",
+      "",
+    population: "",
     coutumes: [
-      "Les gardes changent de poste au son d'une trompette mécanique à chaque heure pleine.",
-      "Honorer les soldats tombés en combat par un salut de trois secondes face à leur plaque de métal.",
-      "Aucun civil ne peut franchir les portes sans un laissez-passer impérial en règle.",
+      "",
     ],
-    pointsInteret: ["La Citadelle du Corbeau", "Les Remparts Nord", "La Salle des Héros Tombés"],
+    pointsInteret: [],
   },
   {
     id: 'rosenshire',
@@ -88,8 +89,9 @@ export const villes: Ville[] = [
     icon: '🌹',
     description:
       "L'une des rares villes d'Anduin à conserver un aspect fleuri. Connue pour ses roses d'acier, fleurs artificielles créées par les artisans mécanistes et offertes lors des cérémonies officielles.",
+    population: "",
     coutumes: [
-      "Offrir une rose d'acier forgée à la main est le signe d'un respect profond.",
+      "Offrir une rose d'acier forgée à la main est le signe d'un profond respect.",
       "Les mariages sont célébrés sous des arches de métal ornées de fleurs forgées.",
       "Tuer une fleur naturelle dans la ville est considéré comme un mauvais présage.",
     ],
@@ -103,13 +105,12 @@ export const villes: Ville[] = [
     x: 74.5, y: 23,
     icon: '⛵',
     description:
-      "Port militaire à l'extrême nord-est du continent, Brien contrôle les voies maritimes septentrionales. Ses bateaux à vapeur cuirassés sont redoutés dans tous les ports d'Astrenor.",
+      "",
+    population: "",
     coutumes: [
-      "Les marins brisent une bouteille de rhum sur la proue avant chaque départ.",
-      "Seuls les navigateurs expérimentés portent le tatouage de l'ancre impériale.",
-      "La couleur rouge sang sur la coque d'un navire annonce une mission de guerre.",
+      ""
     ],
-    pointsInteret: ["Le Port des Vapeurs", "Le Phare Mécanique de Brien", "La Caserne Navale"],
+    pointsInteret: [],
   },
   {
     id: 'haufen',
@@ -119,13 +120,12 @@ export const villes: Ville[] = [
     x: 66.5, y: 35.5,
     icon: '⛏️',
     description:
-      "Centre d'extraction et de raffinage des minerais rares. Haufen approvisionne les forges impériales en métaux précieux nécessaires à la fabrication des automates et des armes à feu.",
+      "",
+    population: "",
     coutumes: [
-      "Les forgerons portent un tablier noir cousu d'un fil d'or pour signifier leur rang.",
-      "Le son des marteaux est considéré comme une musique sacrée - s'y opposer est un outrage.",
-      "Un apprenti n'a le droit de forger sa première pièce qu'après trois ans d'observation.",
+      ""
     ],
-    pointsInteret: ["Les Fonderies Impériales", "Le Marché des Minerais", "La Galerie d'Extraction"],
+    pointsInteret: [],
   },
 
   // ──────────────────────────────────────────
@@ -140,6 +140,7 @@ export const villes: Ville[] = [
     icon: '👑',
     description:
       "La capitale royale de Meltoria, siège du pouvoir du Roi-Sorcier Aegon Tabarly. Cité côtière aux tours dorées, Majestia est le symbole de la grandeur méltorienne et le centre de la chevalerie du continent.",
+    population: "Humains, nains, minorités elfes, lycanthropes, vampiriques et demi-orcs",
     coutumes: [
       "S'agenouiller d'un genou devant tout porteur des insignes royaux.",
       "Les marchés ferment au coucher du soleil et rouvrent à l'aube, suivant le rythme des cloches du château.",
@@ -163,6 +164,7 @@ export const villes: Ville[] = [
     icon: '⚓',
     description:
       "Île quasi sauvage près de Majestia, théoriquement colonie meltorienne, devenue un repaire de pirates notoire. Ses côtes sont de longues falaises bordées de récifs qui rendent la navigation impossible aux non-initiés, et un brouillard épais transforme souvent la mer en piège mortel. Maints capitaines refusent d'en approcher. En surface de l'eau, sous les falaises, des grottes dissimulent d'innombrables cachettes de pirates. La ville elle-même est animée et sympathique pour qui a du cran, à condition de surveiller sa bourse et d'éviter les ennuis. Au-delà de ses murs, l'île est une jungle vierge peuplée d'animaux colorés uniques à la région.",
+    population: "Diverse. On y trouve plus de races minoritaires qu'en moyenne",
     coutumes: [
       "Un capitaine qui connaît le chemin entre les récifs ne partage jamais cette connaissance librement - c'est sa véritable fortune.",
       "Dans les tavernes, on paye ses dettes de jeu ou l'on quitte l'île : les créanciers ici ont des arguments convaincants.",
@@ -184,13 +186,10 @@ export const villes: Ville[] = [
     x: 34, y: 38,
     icon: '🍇',
     description:
-      "Cité réputée pour ses vignobles et son vin, Gives produit certaines des meilleures cuvées d'Astrenor. Les collines environnantes sont couvertes de vignes soignées de génération en génération.",
-    coutumes: [
-      "Briser un verre de vin lors d'une dispute est un affront impardonnable qui réclame réparation.",
-      "Les vendanges donnent lieu à une semaine de festivités où tous les travaux s'arrêtent.",
-      "On scelle les accords importants en partageant un verre du vin de la maison.",
-    ],
-    pointsInteret: ["Le Domaine des Ceps d'Or", "Le Marché du Vin de Gives", "La Cave Ancestrale des Sept Tonneaux"],
+      "Les activités principales de Gives et alentours sont la chasse et l'élevage de bétail, dû à la forêt à l'ouest et les grands pâturages vallonnés entre les montagnes à l'est. Bien que les alentours pourraient sembler secs à première vue, le grand lac au sud-ouest est en réalité formé par des ruisseaux créés par la fonte des neiges des montagnes environnantes, irriguant la région. Dû à la proximité entre Gives et Majestia, la richesse de la capitale impacte positivement la ville. Gives devint de ce fait le premier exportateur de produits animaliers du royaume, et approvisionne même le marché international dans les bonnes années. La relative richesse de la ville et la nature de ses activités entraîna la création d'un marché florissant ainsi qu'une fête associée. En résumé, la vie à Gives est heureuse, les gens n'ont pas faim et sont accueillants, même si les alentours peuvent être dangereux; car au-delà des bêtes sauvages et monstres de la région l'on peut voir sa charrette attaquée par des brigands. Ceux-ci sont bien au fait de la valeur des marchandises des fermes alentour, et ils savent la garde moins importante qu'à la capitale. Ce faisant, Gives est malheureusement une cible de choix.",
+    population: "Humains en quasi-totalité. Les nains sont présents dans la région mais n'ont pas tendance à faire de l'élevage ni même à descendre des montagnes",
+    coutumes: [],
+    pointsInteret: [],
   },
   {
     id: 'courtin',
@@ -201,6 +200,7 @@ export const villes: Ville[] = [
     icon: '⚖️',
     description:
       "Importante ville judiciaire de Meltoria, Courtin abrite les grandes cours de justice du royaume et l'Ordre des Légistes. Ses bâtiments de pierre grise inspirent respect et solennité.",
+    population: "",
     coutumes: [
       "On ne lève jamais la voix dans les rues de Courtin par respect pour les tribunaux.",
       "Les avocats et légistes portent une ceinture verte symbolisant leur appartenance à l'Ordre.",
@@ -216,13 +216,14 @@ export const villes: Ville[] = [
     x: 46, y: 45,
     icon: '🛡️',
     description:
-      "Ville garnison au cœur de Meltoria, Escren est une place forte militaire stratégique. Ses chevaliers assurent la sécurité des routes commerciales et protègent les terres du centre du royaume.",
+      "",
+    population: "",
     coutumes: [
-      "Les chevaliers d'Escren portent toujours leur épée côté gauche, même en tenue civile.",
-      "Le tournoi annuel d'Escren est la compétition chevaleresque la plus prestigieuse de Meltoria.",
-      "Un chevalier qui accepte un défi ne peut pas le refuser - le rejeter est une honte à vie.",
+      "",
+      "",
+      "",
     ],
-    pointsInteret: ["La Caserne des Chevaliers d'Escren", "L'Arène du Grand Tournoi", "Le Mur de la Mémoire"],
+    pointsInteret: [],
   },
   {
     id: 'marmonthicy',
@@ -232,13 +233,18 @@ export const villes: Ville[] = [
     x: 61, y: 49,
     icon: '🏺',
     description:
-      "Cité artisanale et commerciale, Marmonthicy est connue pour ses potiers, ses tisserands et ses marchands. Un carrefour de routes commerciales qui en fait l'une des villes les plus animées de Meltoria.",
+      "Comté viticole gouverné par la maison De Marmonthicy, dont la lignée a tenu bon face à l'empire anduinois pendant la grande guerre malgré la proximité de la frontière. La famille incarne les valeurs meltoriennes dans ce qu'elles ont de plus classique : honneur, commerce et fierté du terroir. L'aîné Lucius prépare sa succession de comte tandis que son cadet Cecilius s'illustre au combat. Le troisième fils, Raphaël, fragilisé depuis la naissance, s'est construit une réputation d'érudit à défaut de pouvoir manier l'épée, et l'on dit qu'il nourrit un rêve aussi tenace que discret. La région est surtout connue pour ses vignes et ses vins, dont les cuvées alimentent les tables des nobles du royaume.",
+    population: "Diverse, mais on y trouve plus d'humains qu'autres choses",
     coutumes: [
-      "Les artisans signent toujours leurs œuvres d'un symbole personnel - copier ce symbole est un crime.",
-      "Marchander est une tradition sacrée - proposer le prix affiché sans négocier est considéré impoli.",
-      "Un repas partagé avec un étranger dans une échoppe scelle une amitié de voyage.",
+      "Briser un verre de vin lors d'une dispute est un affront impardonnable qui réclame réparation.",
+      "Les vendanges donnent lieu à une semaine de festivités où tous les travaux s'arrêtent.",
+      "On scelle les accords importants en partageant un verre du vin de la maison.",
     ],
-    pointsInteret: ["La Grande Halle des Marchands", "Les Ateliers des Potiers", "Le Pont du Commerce de Marmonthicy"],
+    pointsInteret: [
+      "Le Domaine des Ceps d'Or",
+      "Le Marché du Vin de Marmonthicy",
+      "La Cave Ancestrale des Sept Tonneaux",
+    ],
   },
   {
     id: 'signeroy',
@@ -249,6 +255,7 @@ export const villes: Ville[] = [
     icon: '📜',
     description:
       "Centre culturel et intellectuel de Meltoria, Signeroy abrite l'une des plus grandes bibliothèques du continent. Ses scribes et historiens y consignent les mémoires du royaume depuis des siècles.",
+    population: "",
     coutumes: [
       "Le silence est une règle stricte dans les rues proches de la Grande Bibliothèque.",
       "Les habitants de Signeroy ont la réputation d'être de grands conteurs et débatteurs.",
@@ -265,6 +272,7 @@ export const villes: Ville[] = [
     icon: '🌾',
     description:
       "Ville agricole à la frontière orientale de Meltoria, Dorteres approvisionne le royaume en blé, seigle et orge. Ses plaines fertiles en font le grenier de l'ouest d'Astrenor.",
+    population: "",
     coutumes: [
       "La récolte est célébrée par un festin communautaire où nul ne doit manger seul.",
       "Les agriculteurs de Dorteres portent le chapeau de paille comme signe de fierté et d'honneur.",
@@ -281,6 +289,7 @@ export const villes: Ville[] = [
     icon: '⛰️',
     description:
       "Ville fortifiée nichée dans un canyon, seul passage praticable à travers les montagnes de Lassiera. Carrefour incontournable entre les royaumes, Astra abrite une des plus grandes casernes et places d'entraînement de l'Empire d'Anduin - c'est d'ailleurs de là que fut lancée l'offensive de la Grande Guerre. Sa tour de garde, devenue attraction touristique, domine un panorama à couper le souffle sur les sommets environnants.",
+    population: "Humains, nains ainsi que visiteurs divers et variés",
     coutumes: [
       "Tout étranger en transit doit décliner son identité et sa destination au poste de contrôle - Astra ne connaît pas d'anonymes.",
       "Les marchands côtoient les soldats sans distinction dans les tavernes : la ville est cosmopolite et la hiérarchie militaire reste au seuil des casernes.",
@@ -307,11 +316,12 @@ export const villes: Ville[] = [
     icon: '🏜️',
     description:
       "Presqu'île désertique techniquement rattachée à Meltoria, Khareth vit dans une indépendance de fait que les deux partis semblent apprécier. Terre d'excellence artisanale, elle abrite les verriers, sculpteurs et enchanteurs les plus réputés du continent. Ses marchands intrépides sillonnent le monde entier en caravane, exportant œuvres d'art, objets magiques et venin de S'nek, et rapportant des marchandises exotiques jusqu'aux coins les plus reculés d'Astrenor.",
+    population: "Lamias, humains, demi-humains du désert et quelques elfes y vivent en harmonie",
     coutumes: [
       "Les caravanes marchandes de Khareth sont une institution : quitter la cité au moins une fois dans sa vie pour vendre ses œuvres à travers le monde est un rite de passage.",
       "La richesse générée par le commerce extérieur est redistribuée via un réseau d'entraide intérieur - programmes d'éducation et d'emploi financés collectivement.",
       "Un artisan qui vend une pièce défectueuse est tenu de rembourser le double de la valeur et de refaire l'objet gratuitement.",
-      "Le venin de S'nek est une denrée réglementée : seuls les négociants agréés par le conseil de la cité ont le droit de le commercer.",
+      "Le venin de S'nek est une denrée réglementée : seuls les négociants agréés par le conseil de la cité ont le droit de le commercialiser.",
     ],
     pointsInteret: [
       "Les Ateliers des Maîtres Verriers",
@@ -329,13 +339,18 @@ export const villes: Ville[] = [
     icon: '🌊',
     description:
       "Ville portuaire de la côte Est, seul débouché maritime de la région dans ces étendues désertiques. Les larges revenus du port sont avidement captés par une poignée de puissants, laissant la population dans une misère palpable. Peu atteignent ici un âge avancé. Les marchands se parent de joyaux, bien gardés par des légions de soldats, pendant que le peuple survit dans la chaleur et la poussière.",
+    population: "Lamias, demi-humains du désert, sirènes et tritons vivent aux alentours",
     coutumes: [
       "La population générale ne possède pas de nom : un nom se gagne par ses exploits, pas à la naissance.",
       "Il n'est pas rare que des parents abandonnent leurs enfants dès leur jeune âge, ne pouvant en assumer la charge dans ces conditions extrêmes.",
       "La solidarité entre pauvres est une loi non écrite et sacrée - partager ce que l'on a avec plus démuni que soi est la seule règle universellement respectée.",
       "La méfiance envers toute forme d'autorité est profondément ancrée, tant la corruption y est endémique.",
     ],
-    pointsInteret: ["Le Port de la Côte Est - unique débouché maritime de la région", "Le Quartier des Marchands - richesse et dorures sous bonne garde", "Les Faubourgs - cœur de la solidarité populaire"],
+    pointsInteret: [
+      "Le Port de la Côte Ouest",
+      "Le quartier des marchands",
+      "Les Faubourgs",
+    ],
   },
 
   // ──────────────────────────────────────────
@@ -349,11 +364,12 @@ export const villes: Ville[] = [
     x: 50.5, y: 74,
     icon: '🌿',
     description:
-      "L'une des villes les plus anciennes de Sylvestri, gardienne des savoirs ancestraux des elfes. Ses archivistes protègent des connaissances millénaires sur la nature, la magie et les créatures du monde.",
+      "Ancienne capitale de Sylvestri, il s'agit aujourd'hui d'une ville magnifique bien que partiellement en ruines dans laquelle la magie abonde. Ce fut la terre ancestrale des elfes, et désormais seuls les elfes blancs l'habitent encore. On raconte qu'une grande catastrophe aurait été à l'origine de l'état délabré du lieu et aurait causé l'exil des divers clans d'elfes, qui évolueront plus tard chacun de leur côté pour donner les variantes elfiques. Les caractéristiques de la culture elfique sont particulièrement exacerbées à Elderwatch; le traumatisme des anciennes incursions de géants puis d'orcs a engendré les facettes les plus dures de cette culture : attentes sociales élevées, mise en valeur du potentiel magique, eugénisme et méfiance envers les étrangers. Malgré leur histoire teintée de tragédies, le peuple elfe d'Elderwatch s'efforce de faire du lieu un endroit où il fait bon vivre pour qui montre patte blanche. Le temps semble s'y être arrêté tant les traditions et l'esprit de préservation sont forts parmi la population elfique.",
+    population: "Elfes blancs. Il existe des minorités d'elfes d'autres groupes mais elles sont moindres pour des raisons culturelles, bien qu'ils soient les bienvenus",
     coutumes: [
       "On ne parle qu'à voix basse dans les allées boisées d'Elderwatch.",
       "Planter un arbre est le premier acte exigé de tout nouveau résident de la ville.",
-      "Les anciens du Conseil tranchent tous les litiges - leur parole est loi immuable.",
+      "Les anciens du Conseil tranchent tous les litiges - leur parole fait loi.",
       "Couper un arbre vivant sans permission équivaut à un meurtre selon la loi locale.",
     ],
     pointsInteret: ["L'Archive des Anciens d'Elderwatch", "Le Bosquet Sacré", "Le Pont de Lierre Millénaire"],
@@ -366,7 +382,8 @@ export const villes: Ville[] = [
     x: 62.75, y: 70,
     icon: '🌙',
     description:
-      "Ville elfe connue pour ses festivités nocturnes et sa relation particulière avec la lune. Les Siriathiens pratiquent la magie lunaire et organisent leurs cérémonies selon les phases de la lune.",
+      "Fief des elfes bruns après leur exil d'Elderwatch. C'est une ville joviale mais peu peuplée; les elfes bruns comptent beaucoup de chasseurs qui embrassent un mode de vie nomade peu compatible avec la vie en communauté. Une partie non négligeable aspire cependant à une vie moins incertaine et se nourrit grâce à l'élevage. Siriathian incarne cette culture : bien que ne rivalisant pas avec Gives en quantité, la ville se targue d'une variété d'animaux et d'une gastronomie reconnue dans le domaine carnivore. Destination privilégiée, elle compte de nombreuses tavernes et auberges prestigieuses pour voyageurs fortunés. Les elfes du coin organisent régulièrement des tournois de tir à l'arc, des parties de chasse ouverte ou des visites guidées de la forêt. Malgré cette exposition au monde extérieur, les elfes bruns de Siriathian n'accordent pas facilement leur confiance aux étrangers.",
+    population: "Elfes bruns, mais certains humains et demi-humains qui ont décidé de rester après leur visite",
     coutumes: [
       "Les décisions importantes ne se prennent qu'à la pleine lune, réunis sous le ciel ouvert.",
       "Dormir sous les étoiles au moins une nuit par mois est une tradition sacrée pour tout habitant.",
@@ -383,6 +400,7 @@ export const villes: Ville[] = [
     icon: '🏫',
     description:
       "Siège de l'Académie de Magie Étherium, la plus grande et ancienne école de sorcellerie d'Astrenor. Aewood attire des aspirants mages du monde entier pour ses enseignements et ses archevêques légendaires.",
+    population: "Elfes, fées, demi-humains, minorités humaines, dryades et lamias",
     coutumes: [
       "Les apprentis mages portent une robe grise jusqu'à leur premier sort réussi en examen.",
       "Aucune magie destructrice n'est tolérée dans l'enceinte de la ville - l'expulsion est immédiate.",
@@ -400,6 +418,7 @@ export const villes: Ville[] = [
     icon: '🦌',
     description:
       "Village sylvestre renommé pour ses druides et ses guérisseurs. Les habitants de Sylath entretiennent un lien sacré avec les animaux de la forêt, dont beaucoup cohabitent librement avec les villageois.",
+    population: "",
     coutumes: [
       "Nuire à un animal dans le village est punissable d'exil immédiat et sans appel.",
       "Chaque enfant choisit un animal totem lors d'un rituel initiatique à ses 7 ans.",
@@ -415,13 +434,12 @@ export const villes: Ville[] = [
     x: 58.5, y: 86,
     icon: '🍄',
     description:
-      "Village des herboristes et alchimistes naturels de Sylvestri. Keatheile est entouré d'une forêt de champignons géants luminescents servant à la confection de nombreuses potions et remèdes.",
+      "",
+    population: "",
     coutumes: [
-      "Cueillir un champignon sans permission du chef herboriste est un délit grave.",
-      "Les potions de Keatheile sont scellées à la cire de champignon et reconnaissables à leur parfum unique.",
-      "Les visiteurs reçoivent une potion de bienvenue - la refuser est une offense.",
+      ""
     ],
-    pointsInteret: ["La Forêt de Champignons Luminescents", "L'Atelier des Alchimistes", "Le Marché des Herbes Rares"],
+    pointsInteret: [],
   },
   {
     id: 'sylvanea',
@@ -432,12 +450,13 @@ export const villes: Ville[] = [
     icon: '🏡',
     description:
       "Patelin à l'origine mystérieuse, à moitié en ruines, habité par quelques hurluberlus et gens de passage. Nul ne sait ce qui est arrivé aux anciens habitants. Le gouvernement de Sylvestri n'a même pas connaissance de l'existence du village : c'est une terre de retraite où se retrouvent des marginaux qui peuvent disparaître du jour au lendemain. On n'arrive à Sylvanea qu'au gré de la fortune.",
+    population: "Diverse",
     coutumes: [
       "Nul ne pose de questions sur l'identité ou le passé d'un autre - chacun arrive à Sylvanea pour une raison qui lui appartient.",
       "Les rares habitants permanents accueillent les nouveaux arrivants sans cérémonie ni méfiance excessive : la survie est une affaire collective.",
       "Il est de coutume de laisser une marque discrète sur un mur en partant, seul témoignage que l'on a existé ici.",
       "Les ruines du village ancien sont interdites la nuit - non par loi, mais par une peur tacite et partagée de tous.",
     ],
-    pointsInteret: ["Les Ruines de l'Ancien Village", "La Grande Forêt Environnante", "La Taverne des Marginaux - seul bâtiment vraiment entretenu", "Le Puits Central"],
+    pointsInteret: ["Les Ruines de l'Ancien Village", "La Grande Forêt Environnante", "La Taverne des Marginaux", "Le Puits Central"],
   },
 ];
