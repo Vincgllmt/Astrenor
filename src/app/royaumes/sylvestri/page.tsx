@@ -25,21 +25,6 @@ export default function SylvestriPage() {
         </div>
       </section>
 
-      {/* Map */}
-      <section className="py-8 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-sylvestri/50 shadow-2xl shadow-sylvestri/20 group">
-            <Image
-              src="/map/carte_sylvestri.png"
-              alt="Carte du Royaume de Sylvestri"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
-          </div>
-        </div>
-      </section>
-
       {/* Overview */}
       <section className="py-16 px-4 bg-black/30">
         <div className="max-w-6xl mx-auto">
@@ -297,6 +282,52 @@ export default function SylvestriPage() {
                 Une faction (ou race) démoniaque récemment arrivée, cherchant à nouer des alliances diplomatiques
                 avec certaines familles humaines.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Culture */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <SectionTitle title="Culture & Société" subtitle="La philosophie d'un peuple aussi ancien que ses forêts" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <div className="space-y-4">
+              <p className="text-foreground/70">
+                Sylvestri est le plus ancien des pays du continent. C&apos;est une fédération <strong className="text-sylvestri">isolationniste, écologique et bienveillante</strong>, gouvernée par un conseil qui laisse chaque région dans un entre-soi légal et racial marqué. Il est rare pour un elfe de croiser un centaure, bien qu&apos;ils habitent techniquement le même pays.
+              </p>
+              <p className="text-foreground/60">
+                Le mot d&apos;ordre est <strong className="text-sylvestri">l&apos;hédonisme</strong> : chacun aspire à son bonheur et à créer un environnement agréable, au détriment parfois de la productivité. La volonté écologique du conseil vise à préserver l&apos;habitat naturel par tous les moyens — pacifiques ou guerriers. La magie est une force très présente, utilisée dans la vie de tous les jours.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <div className="bg-black/40 border border-sylvestri/30 rounded-xl p-5">
+                <h4 className="text-sylvestri font-bold mb-2">🤝 Alliance avec Meltoria</h4>
+                <p className="text-foreground/60 text-sm">Sylvestri entretient de bonnes relations avec Meltoria depuis des siècles, renforcées par leur alliance pendant la Grande Guerre. Une amitié précieuse dans un continent souvent en tension.</p>
+              </div>
+              <div className="bg-black/40 border border-sylvestri/30 rounded-xl p-5">
+                <h4 className="text-sylvestri font-bold mb-2">🎓 L&apos;Académie Étherium</h4>
+                <p className="text-foreground/60 text-sm">Prônant une politique égalitaire, l&apos;Académie apporte un vent d&apos;ouverture à Sylvestri. Mais les rancunes d&apos;hier sont tenaces, surtout pour des elfes à la mémoire longue comme leur vie.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="bg-black/40 border border-sylvestri/30 rounded-xl p-5 text-center">
+              <div className="text-3xl mb-2">🌿</div>
+              <h4 className="text-sylvestri font-bold mb-1">Écologie</h4>
+              <p className="text-foreground/60 text-sm">La préservation de la nature est une loi autant qu&apos;une conviction. La forêt est sacrée, et sa destruction équivaut à un meurtre.</p>
+            </div>
+            <div className="bg-black/40 border border-sylvestri/30 rounded-xl p-5 text-center">
+              <div className="text-3xl mb-2">✨</div>
+              <h4 className="text-sylvestri font-bold mb-1">Magie du Quotidien</h4>
+              <p className="text-foreground/60 text-sm">La magie n&apos;est pas réservée aux mages — elle est un outil ordinaire, utilisé dans l&apos;artisanat, la cuisine, la construction.</p>
+            </div>
+            <div className="bg-black/40 border border-sylvestri/30 rounded-xl p-5 text-center">
+              <div className="text-3xl mb-2">🪵</div>
+              <h4 className="text-sylvestri font-bold mb-1">Artisanat d&apos;Excellence</h4>
+              <p className="text-foreground/60 text-sm">Textile, tapisserie, menuiserie et ébénisterie sont les domaines d&apos;excellence sylvestres, souvent rehaussés par des enchantements naturels.</p>
             </div>
           </div>
         </div>
