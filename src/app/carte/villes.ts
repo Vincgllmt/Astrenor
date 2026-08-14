@@ -298,17 +298,18 @@ export const villes: Ville[] = [
     x: 50, y: 37,
     icon: '⛰️',
     description:
-      "Ville fortifiée nichée dans un canyon, seul passage praticable à travers les montagnes de Lassiera. Carrefour incontournable entre les royaumes, Astra abrite une des plus grandes casernes et places d'entraînement de l'Empire d'Anduin - c'est d'ailleurs de là que fut lancée l'offensive de la Grande Guerre. Sa tour de garde, devenue attraction touristique, domine un panorama à couper le souffle sur les sommets environnants.",
-    population: "Humains, nains ainsi que visiteurs divers et variés",
+      "Ville fortifiée nichée dans un canyon, seul passage praticable à travers les montagnes de Lassiera. Astra fut pendant des siècles la plus grande caserne frontalière de l'Empire d'Anduin - c'est d'ailleurs de là que fut lancée l'offensive de la Grande Guerre. Cédée à Meltoria par le Grand Accord de Sylvarin, elle vient d'être reconquise par le général Belarius Mephiston, qui s'est autoproclamé Marquis et a refortifié la place avec de l'artillerie lourde, en violation ouverte de la paix de 19 ans. Sa tour de garde, longtemps simple attraction touristique, surveille de nouveau la frontière comme aux heures de la guerre.",
+    population: "Majoritairement humaine : garnison anduinoise nouvellement installée et habitants meltoriens restés sur place, sous contrôle militaire",
     coutumes: [
       "Tout étranger en transit doit décliner son identité et sa destination au poste de contrôle - Astra ne connaît pas d'anonymes.",
-      "Les marchands côtoient les soldats sans distinction dans les tavernes : la ville est cosmopolite et la hiérarchie militaire reste au seuil des casernes.",
-      "Monter au sommet de la Grande Tour au lever du soleil est un rite de passage pour tout nouveau résident.",
+      "Les marchands côtoient les soldats sans distinction dans les tavernes : la ville reste cosmopolite malgré l'occupation, et la hiérarchie militaire s'arrête au seuil des casernes.",
+      "Monter au sommet de la Grande Tour au lever du soleil est un rite de passage pour tout nouveau résident, garnison comprise.",
       "Les duels sont tolérés dans l'arène désignée, mais la bagarre dans les rues vaut une nuit de cellule - l'ordre prime sur tout.",
+      "Depuis la reconquête, les bannières et symboles royaux meltoriens ont été retirés des façades sur ordre du Marquis Belarius - certains habitants les dissimulent malgré tout chez eux.",
     ],
     pointsInteret: [
       "La Grande Tour de Garde - vue panoramique sur les montagnes de Lassiera",
-      "La Caserne Impériale d'Anduin - l'une des plus grandes de l'Empire",
+      "La Caserne Impériale d'Anduin - refortifiée par Belarius Mephiston depuis la reconquête",
       "Le Col du Canon - défilé stratégique et mémorial de la Grande Guerre",
       "Le Marché du Carrefour - marchandises des trois royaumes en un seul endroit",
     ],

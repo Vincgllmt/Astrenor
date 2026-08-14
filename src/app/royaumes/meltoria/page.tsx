@@ -142,7 +142,7 @@ export default function MeltoriaPage() {
                 la mort tragique de ses parents, il maintint la guerre jusqu&apos;à la paix finale à ses 34 ans.
               </p>
               <p className="text-foreground/60 text-sm">
-                Désormais âgé de 44 ans, le Roi-Sorcier Aegon est le dernier représentant de la
+                Désormais âgé de 53 ans, le Roi-Sorcier Aegon est le dernier représentant de la
                 famille royale Tabarly. Sans épouse ni héritier, il règne sur un royaume prospère
                 grâce à son industrie, sa production agricole et ses armes légendaires.
               </p>
@@ -178,6 +178,8 @@ export default function MeltoriaPage() {
               <p className="text-foreground/70">
                 Une maison noble récente et richissime, dirigée par Madame Marlaan (en réalité Alyzée, une succube).
                 Elle contrôle de nombreuses ressources et dispose d'un vaste réseau d'influence officieux.
+                Sa compagne, la Lilim <strong>Hego</strong>, partage avec elle le manoir et le titre officieux de
+                &quot;Maîtresse du Manoir&quot; — bien que très peu de monde sache qui elle est réellement.
               </p>
             </div>
 

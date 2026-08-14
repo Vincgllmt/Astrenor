@@ -270,7 +270,7 @@ export default function EnfersPage() {
               title="Luxure - Maîtresse du Manoir"
               symbol="💋"
               quote="Viens… Promets-moi tout, perds-toi en moi."
-              description="Agit comme une véritable maman envers ses domestiques. Dégage une aura de séduction surnaturelle qui agit sur les émotions et désirs. Considère son pouvoir comme une malédiction."
+              description="Agit comme une véritable maman envers ses domestiques. Dégage une aura de séduction surnaturelle qui agit sur les émotions et désirs. Considère son pouvoir comme une malédiction. Partage le manoir et le cœur d'Alyzée, la succube que le monde connaît sous le nom de Madame Marlaan."
             />
 
             <CharacterCard
