@@ -58,12 +58,18 @@ export const villes: Ville[] = [
     x: 36.25, y: 15,
     icon: '🏭',
     description:
-      "",
-    population: "",
+      "Port militaire et industriel, construit pour durer plutôt que pour plaire. Les quais en acier renforcé accueillent les navires de guerre de l'Empire et les convois de ressources extraites du nord. La ville sent le charbon et le sel.",
+    population: "Humains endurcis, ingénieurs navals, soldats en poste",
     coutumes: [
-      ""
+      "Les ingénieurs navals graveront toujours leurs initiales sur la première pièce d'acier posée d'un nouveau navire, c’est une tradition de fierté autant que de responsabilité",
+      "On ne fête pas les départs, seulement les retours",
+      "Offrir de l'huile de machine à un artisan est une marque de respect comparable à offrir du vin ailleurs",
     ],
-    pointsInteret: [],
+    pointsInteret: [
+        "Les Chantiers de Fer Noir. Les plus grands chantiers navals d'Anduin, bruyants jour et nuit",
+        "La Tour de Vigie Mécanique. équipée de longues-vues à vapeur capables de détecter un navire à plusieurs lieues",
+        "La Taverne du Fond de Cale. C’est le point de rendez-vous des marins et ingénieurs, réputée pour ses alcools forts et ses bagarres mémorables",
+    ],
   },
   {
     id: 'barrencrag',
@@ -199,12 +205,18 @@ export const villes: Ville[] = [
     x: 32, y: 60,
     icon: '⚖️',
     description:
-      "",
-    population: "",
+      "Port marchand animé, considéré comme l'une des villes les plus pieuses de Meltoria. La mer y est perçue comme un don du Père et de la Mère conjointement : le premier pour la force qu'elle exige, la seconde pour la vie qu'elle nourrit. Les marins de Courtin sont réputés dans tout le continent pour leur superstition et leur foi inébranlable.",
+    population: "Humains majoritairement, avec une présence notable de demi-elfes attirés par le commerce ",
     coutumes: [
-        "",
+        "Avant chaque départ en mer, les marins suspendent une offrande votive au temple du port composé d’une pièce pour le Père et d’une fleur pour la Mère ",
+        "Le premier poisson de la saison est toujours rejeté à la mer, offert aux dieux en signe de gratitude ",
     ],
-    pointsInteret: [],
+    pointsInteret: [
+        "Le Grand Marché des Marées. Actif dès l'aube, fermé à midi, rythmé par les cloches du temple voisin",
+        "Le Temple des Cinq Vagues. C’est un temple unique dédié aux cinq dieux avec cinq autels distincts. A noter que celui de l’Orphelin est relégué dans une alcôve sombre à l’écart des autres\n",
+        "Les Docks des Guildes. Chaque guilde marchande y possède son entrepôt et chacune a son propre dévot attitré pour bénir les cargaisons",
+        "La Maison du Dernier Passage. Discret bâtiment en retrait du port, géré par les prêtres de l’Orphelin, où sont préparés les défunts de la mer"
+    ],
   },
   {
     id: 'escren',
@@ -432,12 +444,18 @@ export const villes: Ville[] = [
     x: 58.5, y: 86,
     icon: '🍄',
     description:
-      "",
-    population: "",
+      "Ville côtière à moitié construite sur l'eau, à moitié enchâssée dans les falaises couvertes de végétation. Les habitants ont développé une relation particulière avec les marées, qu'ils lisent comme des présages magiques. L'académie d'Aewood y envoie parfois ses étudiants étudier les courants magiques océaniques.",
+    population: "Elfes et humains principalement, quelques rares créatures marines semi-intelligentes tolérées en périphérie",
     coutumes: [
-      ""
+        "La lecture des marées est une pratique courante et certains habitants lisent l'avenir dans le mouvement de l'eau.",
+        "Les maisons sont construites de façon à laisser passer le vent marin librement, bloquer le vent est considéré comme un porte malheur.",
+        "Les naissances survenues lors de la marée haute sont perçues comme un signe de destin exceptionnel."
     ],
-    pointsInteret: [],
+    pointsInteret: [
+        "Les Jardins Suspendus de la Falaise.  De beaux jardins magiques accrochés aux parois, arrosés par les embruns",
+        "Le phare des Murmures. Il émet une lumière teintée selon les courants magiques, servant de guide spirituel et maritime.",
+        "Les Bassins d'Étude. Ce sont des piscines naturelles utilisées par les apprentis mages pour observer la magie aquatique à l'état brut"
+    ],
   },
   {
     id: 'sylvanea',
