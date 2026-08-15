@@ -6,7 +6,7 @@ Bienvenue dans **Astrenor**, un univers de jeu de rôle immersif où la magie an
 
 ## 🗺️ Le Monde d'Astrenor
 
-Le continent d'Astrenor est marqué par une histoire sanglante, notamment la **Guerre des Deux Siècles**, un conflit dévastateur opposant la Magie à la Technologie. Bien qu'un traité de paix ait été signé il y a vingt ans, les tensions restent vives et de nouvelles menaces émergent de l'ombre.
+Le continent d'Astrenor est marqué par une histoire sanglante, notamment la **Guerre des Deux Siècles**, un conflit dévastateur opposant la Magie à la Technologie. Bien que le Grand Accord de Sylvarin ait mis fin à la guerre il y a 19 ans, les tensions restent vives et de nouvelles menaces émergent de l'ombre.
 
 ### ⚔️ Factions & Géopolitique
 
@@ -33,10 +33,14 @@ Une région sauvage abritant des créatures féeriques et des secrets oubliés.
 
 #### 🏴‍☠️ Forces Indépendantes & Menaces
 - **Baronnie de Befohrt** : Île disputée entre Meltoria et Sylvestri sans qu'aucun des deux ne l'ait jamais tranché. La famille Levonhardt y gouverne le port et lutte, sans succès total, contre les pirates qui tiennent les grottes et la jungle de l'île.
-- **La Flotte de L'Espérance** : Corsaires chasseurs de pirates dirigés par le Capitaine Sombad.
-- **Le Soleil Rouge** : Une secte vampirique redoutable.
-- **Les Dagues de Sicars** : Une guilde d'assassins clandestine.
-- **L'Armée des Dragons** : Une force organisée réduisant les villes en cendres.
+- **Les Dagues de Sicars** : Une guilde d'assassins clandestine opérant sous couverture à Meltoria.
+- **Les Attaques de Dragons** : Menace non résolue - des dragons intelligents et coordonnés ("Porteurs de Mort" comme Chaldryd) détruisent des villes et gèrent des camps de prisonniers, sans qu'on sache qui ou ce qui les dirige.
+
+#### 🔥 Les Enfers
+Royaume souterrain créé par les dieux pour y bannir les **Lilim**, une fratrie de 7 enfants trop puissants. La Porte, seul passage vers la surface, s'est récemment brisée lors d'une attaque angélique et s'ouvre désormais par intermittence. Les démons y sont diversement acceptés selon les royaumes de surface (mal vus à Sylvestri, tolérés à Meltoria, bien acceptés à Anduin).
+
+#### ⛪ Religion
+Meltoria vénère un panthéon de Cinq Dieux (dont l'Orphelin, dieu de l'ombre et de la mort) ; Anduin l'a rejeté au profit d'un humanisme d'État. Le **Culte d'Eldritch**, dévoué à un dieu innommable et mené par l'unique prêtresse Emily Morgan, vient d'être traqué et éradiqué par l'Église meltorienne.
 
 ---
 
@@ -79,5 +83,8 @@ Ouvrez [http://localhost:3000](http://localhost:3000) pour voir le résultat.
 
 ### Structure
 
-- `app/` : Code source de l'application.
-- `Contexte/` : Dossier contenant le lore brut et les fichiers de travail (`FACTIONS.md`, `LORE_JOUEURS.md`).
+- `src/app/` : Pages de l'application (Next.js App Router) - Accueil, Royaumes (Meltoria, Sylvestri, Anduin), Carte, Histoire, Magie, Les Enfers, Religion, Races, Bestiaire, Légendes, Quêtes, Almanach.
+- `src/app/carte/villes.ts` : Données des villes affichées sur la carte interactive.
+- `src/app/enfers/territoires.ts` : Données des territoires des Enfers.
+- `src/components/` : Composants partagés (cartes, en-tête, pied de page, sélecteur de thème).
+- `.claude/skills/lore-astrenor/` : Mémo de référence du lore, à tenir synchronisé avec le code des pages (source de vérité canon).
