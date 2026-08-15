@@ -161,7 +161,7 @@ export default function MeltoriaPage() {
               <h3 className="text-xl font-bold text-meltoria mb-2">🩸 Le Culte d'Eldritch</h3>
               <p className="text-foreground/70">
                 Un culte mystérieux récemment traqué et éradiqué dans la capitale. Ils prêchaient un message
-                séduisant mais dangereux. Quelques survivants, comme l'apôtre Emily Morgan, sont toujours en fuite.
+                séduisant mais dangereux. Quelques survivants, comme la prêtresse Emily Morgan, sont toujours en fuite.
               </p>
             </div>
 
