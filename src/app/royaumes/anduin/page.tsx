@@ -270,8 +270,8 @@ export default function AnduinPage() {
             <div className="bg-black/40 border border-anduin/30 rounded-xl p-6">
               <h3 className="text-xl font-bold text-anduin mb-2">🎖️ Famille Mephiston</h3>
               <p className="text-foreground/70">
-                Une lignée de généraux impériaux légendaires. <strong>Belarius Mephiston</strong> a récemment conquis
-                la ville de Meltoria nommée <strong>Astra</strong>, s'autoproclamant Marquis et fortifiant la zone avec de l'artillerie lourde.
+                Une lignée de généraux impériaux légendaires. <strong>Belarius Mephiston</strong> a récemment reconquis
+                <strong>Astra</strong>, ancienne caserne frontalière d'Anduin cédée à Meltoria par le Grand Accord, s'autoproclamant Marquis et fortifiant la zone avec de l'artillerie lourde.
               </p>
             </div>
 

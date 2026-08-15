@@ -162,29 +162,6 @@ export const villes: Ville[] = [
     ],
   },
   {
-    id: 'befohrt',
-    nom: 'Befohrt',
-    royaume: 'meltoria',
-    type: 'ville',
-    x: 23, y: 64,
-    icon: '⚓',
-    description:
-      "Île quasi sauvage près de Majestia, théoriquement colonie meltorienne, devenue un repaire de pirates notoire. Ses côtes sont de longues falaises bordées de récifs qui rendent la navigation impossible aux non-initiés, et un brouillard épais transforme souvent la mer en piège mortel. Maints capitaines refusent d'en approcher. En surface de l'eau, sous les falaises, des grottes dissimulent d'innombrables cachettes de pirates. La ville elle-même est animée et sympathique pour qui a du cran, à condition de surveiller sa bourse et d'éviter les ennuis. Au-delà de ses murs, l'île est une jungle vierge peuplée d'animaux colorés uniques à la région.",
-    population: "Diverse. On y trouve plus de races minoritaires qu'en moyenne",
-    coutumes: [
-      "Un capitaine qui connaît le chemin entre les récifs ne partage jamais cette connaissance librement - c'est sa véritable fortune.",
-      "Dans les tavernes, on paye ses dettes de jeu ou l'on quitte l'île : les créanciers ici ont des arguments convaincants.",
-      "Voler un autre pirate dans l'enceinte de la ville est le seul crime unanimement puni - à l'extérieur, tout est permis.",
-      "Les nouveaux arrivants doivent offrir une tournée générale à la taverne la plus proche : c'est le droit d'entrée non officiel.",
-    ],
-    pointsInteret: [
-      "Les Grottes des Falaises - cachettes de pirates taillées dans la roche",
-      "La Taverne de la Brume - cœur social de la ville",
-      "Le Sentier des Initiés - seule route navigable entre les récifs, jalousement gardée",
-      "La Jungle Vierge de l'Île - faune colorée et endémique",
-    ],
-  },
-  {
     id: 'gives',
     nom: 'Gives',
     royaume: 'meltoria',
@@ -318,6 +295,30 @@ export const villes: Ville[] = [
   // ──────────────────────────────────────────
   // INDÉPENDANTS
   // ──────────────────────────────────────────
+  {
+    id: 'befohrt',
+    nom: 'Befohrt',
+    royaume: 'independant',
+    type: 'ville',
+    x: 23, y: 64,
+    icon: '⚓',
+    description:
+      "Île surnommée « la Virgule » par les marins pour sa forme incurvée, Befohrt est un territoire que Meltoria et Sylvestri revendiquent tous deux sur le papier - chartes féodales contradictoires à l'appui - sans qu'aucun des deux royaumes n'ait jamais jugé l'enjeu assez important pour lever une armée. Dans les faits, l'île n'obéit qu'à elle-même. Ses côtes sont de longues falaises bordées de récifs et noyées dans un brouillard épais qui rendent la navigation impossible aux non-initiés ; maints capitaines refusent d'en approcher. La Baronnie Levonhardt, installée dans la ville portuaire et prospère grâce à la pêche, y fait régner un semblant d'ordre et arme une flotte corsaire pour protéger ses eaux - mais au-delà des murs du port, les grottes des falaises et la jungle vierge de l'intérieur abritent un repaire de pirates que la baronne Isadora n'est jamais parvenue à déloger.",
+    population: "Diverse - pêcheurs et corsaires de la Baronnie, plus de races minoritaires que la moyenne, sans compter la population flottante des grottes",
+    coutumes: [
+      "Un capitaine qui connaît le chemin entre les récifs ne partage jamais cette connaissance librement - c'est sa véritable fortune, que l'on navigue pour la Baronnie ou contre elle.",
+      "Dans les tavernes, on paye ses dettes de jeu ou l'on quitte l'île : les créanciers ici ont des arguments convaincants.",
+      "Voler un autre habitant dans l'enceinte du port est le seul crime unanimement puni par la garde Levonhardt - au-delà des murs, c'est une autre loi qui règne.",
+      "Les nouveaux arrivants doivent offrir une tournée générale à la taverne la plus proche : c'est le droit d'entrée non officiel, corsaire comme pirate.",
+    ],
+    pointsInteret: [
+      "Le Manoir Levonhardt - siège de la Baronnie, dominant le port",
+      "Les Grottes des Falaises - repaire de pirates que la garde n'a jamais réussi à nettoyer",
+      "La Taverne de la Brume - terrain neutre où corsaires et pirates boivent côte à côte",
+      "Le Sentier des Initiés - seule route navigable entre les récifs, jalousement gardée par ceux qui la connaissent",
+      "La Jungle Vierge de l'Île - faune colorée et endémique, refuge de ceux qui fuient le port",
+    ],
+  },
   {
     id: 'khareth',
     nom: 'Khareth',

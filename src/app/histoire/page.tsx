@@ -200,8 +200,8 @@ export default function HistoirePage() {
               <span className="text-anduin font-bold">Violation du Traité</span>
               <h3 className="text-xl font-bold text-foreground mt-1 mb-3">La Prise d'Astra</h3>
               <p className="text-foreground/70">
-                Fragilisant la paix de 19 ans, <strong>Belarius Mephiston</strong>, général d'Anduin, a conquis
-                la ville de Meltoria nommée <strong>Astra</strong>. Il s'est autoproclamé Marquis et a fortifié la zone,
+                Fragilisant la paix de 19 ans, <strong>Belarius Mephiston</strong>, général d'Anduin, a reconquis
+                <strong>Astra</strong>, ancienne caserne frontalière d'Anduin cédée à Meltoria par le Grand Accord de Sylvarin. Il s'est autoproclamé Marquis et a fortifié la zone,
                 relançant les tensions entre les deux royaumes.
               </p>
             </div>

@@ -28,11 +28,11 @@ Une puissance militaire expansionniste qui rejette la magie au profit de la tech
 *Le mystère des Forêts et des Esprits.*
 Une région sauvage abritant des créatures féeriques et des secrets oubliés.
 - **Académie Etherium d'Aewood** : Prestigieuse école de magie d'Altération.
-- **Baronnie de Befohrt** : Une île prospère au nord-ouest, protégée par une flotte corsaire.
 - **La Colonie de l'Ancêtre** : Une horreur insectoïde tapie au cœur de la forêt de Sylvanea.
 - **Les Astriens** : Elfes noirs astrologues cherchant le sens des étoiles.
 
 #### 🏴‍☠️ Forces Indépendantes & Menaces
+- **Baronnie de Befohrt** : Île disputée entre Meltoria et Sylvestri sans qu'aucun des deux ne l'ait jamais tranché. La famille Levonhardt y gouverne le port et lutte, sans succès total, contre les pirates qui tiennent les grottes et la jungle de l'île.
 - **La Flotte de L'Espérance** : Corsaires chasseurs de pirates dirigés par le Capitaine Sombad.
 - **Le Soleil Rouge** : Une secte vampirique redoutable.
 - **Les Dagues de Sicars** : Une guilde d'assassins clandestine.

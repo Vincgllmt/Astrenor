@@ -240,8 +240,7 @@ export default function SylvestriPage() {
             <div className="bg-black/40 border border-sylvestri/30 rounded-xl p-6">
               <h3 className="text-xl font-bold text-sylvestri mb-2">⚓ Baronnie de Befohrt</h3>
               <p className="text-foreground/70">
-                Située sur l'<strong>Île de la Virgule</strong> au Nord-Ouest. Dirigée par la famille <strong>Levonhardt</strong> (Isadora),
-                cette île prospère grâce à la pêche et est protégée par une flotte corsaire.
+                Sylvestri revendique de longue date la suzeraineté sur l'île de Befohrt, au Nord-Ouest - Meltoria en réclame tout autant la possession, sans qu'aucun des deux n'ait jamais fait valoir sa prétention par les armes. Dans les faits, la Baronnie <strong>Levonhardt</strong> (Isadora) n'obéit qu'à elle-même, et ses pêcheurs comme ses corsaires commercent librement avec les deux royaumes.
               </p>
             </div>
 
