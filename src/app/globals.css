@@ -58,6 +58,180 @@
   --theme-gradient-end: rgba(93, 109, 126, 0.04);
 }
 
+/* Theme: Oryn (Violet - Astral) */
+[data-kingdom="oryn"] {
+  color-scheme: dark;
+  --background: #0d0716;
+  --foreground: #ece4f5;
+  --foreground-muted: #b9a8cc;
+  --foreground-dark: #2a1c3d;
+  --primary: #a566e0;
+  --primary-dark: #7c3fb8;
+  --primary-light: #c99af2;
+  --secondary: #5fd4c7;
+  --accent: #e0a544;
+  --meltoria: #d4af37;
+  --sylvestri: #4eba6f;
+  --anduin: #6ba3c7;
+  --theme-gradient-start: rgba(165, 102, 224, 0.08);
+  --theme-gradient-end: rgba(95, 212, 199, 0.05);
+}
+
+[data-kingdom="oryn"] body {
+  background: linear-gradient(180deg, #0d0716 0%, #1a0f26 50%, #0d0716 100%);
+}
+
+[data-kingdom="oryn"] ::-webkit-scrollbar-track {
+  background: #170f22;
+}
+
+[data-kingdom="oryn"] .card-hover:hover {
+  box-shadow: 0 10px 40px rgba(165, 102, 224, 0.3);
+}
+
+[data-kingdom="oryn"] .text-gradient {
+  background: linear-gradient(135deg, #c99af2 0%, #f0c4ff 50%, #c99af2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Theme: Sonihelm — Light by default, can turn into Les Enfers (dark) via data-mode */
+[data-kingdom="sonihelm"] {
+  color-scheme: light;
+  --background: #f4f0e6;
+  --foreground: #2b2620;
+  --foreground-muted: #5c5648;
+  --foreground-dark: #ded5c0;
+  --primary: #c9973f;
+  --primary-dark: #a5782a;
+  --primary-light: #e0b563;
+  --secondary: #7fa8c9;
+  --accent: #b8863f;
+  --meltoria: #d4af37;
+  --sylvestri: #4eba6f;
+  --anduin: #6ba3c7;
+  --theme-gradient-start: rgba(201, 151, 63, 0.10);
+  --theme-gradient-end: rgba(127, 168, 201, 0.08);
+}
+
+[data-kingdom="sonihelm"] body {
+  background: linear-gradient(180deg, #f6f2e8 0%, #ece4d0 50%, #f6f2e8 100%);
+}
+
+[data-kingdom="sonihelm"] ::-webkit-scrollbar-track {
+  background: #e6ddc8;
+}
+
+[data-kingdom="sonihelm"] .card-hover:hover {
+  box-shadow: 0 10px 40px rgba(201, 151, 63, 0.25);
+}
+
+[data-kingdom="sonihelm"] .text-gradient {
+  background: linear-gradient(135deg, #8a651f 0%, #c9973f 50%, #8a651f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Sonihelm light mode: cards and muted text need to flip from the site-wide dark defaults */
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) .bg-black\/40 {
+  background-color: rgba(255, 252, 244, 0.75) !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) .bg-black\/30 {
+  background-color: rgba(255, 252, 244, 0.6) !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) .bg-primary\/10 {
+  background: linear-gradient(to bottom right, rgba(201, 151, 63, 0.15), transparent), rgba(255, 250, 240, 0.85) !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) .bg-accent\/10 {
+  background: linear-gradient(to bottom right, rgba(184, 134, 63, 0.15), transparent), rgba(255, 250, 240, 0.85) !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) .bg-meltoria\/10 {
+  background: linear-gradient(to bottom right, rgba(212, 175, 55, 0.15), transparent), rgba(255, 250, 240, 0.85) !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) .bg-sylvestri\/10 {
+  background: linear-gradient(to bottom right, rgba(78, 186, 111, 0.15), transparent), rgba(245, 250, 245, 0.85) !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) .bg-anduin\/10 {
+  background: linear-gradient(to bottom right, rgba(107, 163, 199, 0.15), transparent), rgba(245, 248, 250, 0.85) !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) .text-foreground\/40 {
+  color: #8c8570 !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) .text-foreground\/50 {
+  color: #6f6857 !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) .text-foreground\/60 {
+  color: #574f3f !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) .text-foreground\/70 {
+  color: #453e2f !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) .text-foreground\/80 {
+  color: #332c20 !important;
+}
+
+/* Header/Footer stay on a dark bar in every theme - restore the standard light-gray text there */
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) header .text-foreground\/80 {
+  color: #c5c0b5 !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) header .text-foreground\/60,
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) footer .text-foreground\/60 {
+  color: #a8a295 !important;
+}
+
+[data-kingdom="sonihelm"]:not([data-mode="dark"]) footer .text-foreground\/40 {
+  color: #8a857a !important;
+}
+
+/* Sonihelm dark mode = Les Enfers */
+[data-kingdom="sonihelm"][data-mode="dark"] {
+  color-scheme: dark;
+  --background: #0d0505;
+  --foreground: #ecdcd8;
+  --foreground-muted: #b89a94;
+  --foreground-dark: #2a1414;
+  --primary: #d1453f;
+  --primary-dark: #a02e2a;
+  --primary-light: #e87068;
+  --secondary: #7a2020;
+  --accent: #e0793a;
+  --theme-gradient-start: rgba(209, 69, 63, 0.08);
+  --theme-gradient-end: rgba(224, 121, 58, 0.05);
+}
+
+[data-kingdom="sonihelm"][data-mode="dark"] body {
+  background: linear-gradient(180deg, #0d0505 0%, #1a0a0a 50%, #0d0505 100%);
+}
+
+[data-kingdom="sonihelm"][data-mode="dark"] ::-webkit-scrollbar-track {
+  background: #170a0a;
+}
+
+[data-kingdom="sonihelm"][data-mode="dark"] .card-hover:hover {
+  box-shadow: 0 10px 40px rgba(209, 69, 63, 0.3);
+}
+
+[data-kingdom="sonihelm"][data-mode="dark"] .text-gradient {
+  background: linear-gradient(135deg, #e87068 0%, #f5a8a0 50%, #e87068 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
