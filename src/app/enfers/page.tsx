@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { SectionTitle, CharacterCard } from '@/components';
 import { Metadata } from 'next';
+import InteractiveMap from './InteractiveMap';
 
 export const metadata: Metadata = {
   title: 'Les Enfers - Royaume des Démons | Astrenor',
@@ -26,19 +26,11 @@ export default function EnfersPage() {
 
         {/* Map */}
         <section className="mb-16">
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-accent/50 shadow-2xl shadow-accent/20 group">
-            <Image
-              src="/map/carte_enfer_astrenor.png"
-              alt="Carte des Enfers"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
-            <div className="absolute bottom-6 left-6 right-6">
-              <h3 className="text-2xl font-bold text-accent mb-2">Géographie Infernale</h3>
-              <p className="text-gray-300 max-w-2xl">Une terre désolée et chaotique, façonnée par les caprices des Lilim.</p>
-            </div>
-          </div>
+          <h3 className="text-2xl font-bold text-accent mb-2 text-center">Géographie Infernale</h3>
+          <p className="text-gray-300 max-w-2xl mx-auto text-center mb-6">
+            Survolez un territoire pour l&apos;aperçu, cliquez pour découvrir son souverain et ses secrets.
+          </p>
+          <InteractiveMap />
         </section>
 
         {/* Overview */}
