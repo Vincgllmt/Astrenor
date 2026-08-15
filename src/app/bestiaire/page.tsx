@@ -270,7 +270,7 @@ export default function BestiairePage() {
         </section>
 
         {/* Créatures Draconiennes */}
-        <section className="mb-16">
+        <section id="dragons" className="mb-16 scroll-mt-24">
           <SectionTitle title="Créatures Draconiennes" subtitle="Les descendants et apparentés des dragons" />
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -300,8 +300,8 @@ export default function BestiairePage() {
                   contre ces monstruosités. Tuer un dragon causait énormément de pertes, mais moins que de les laisser en vie.
                 </p>
                 <p className="text-foreground/70 mb-4">
-                  Au prix de nombreuses pertes, les dragons restants finirent par s&apos;enfuir du continent, s&apos;installant sur 
-                  une autre terre loin de leurs origines, où ils restent maîtres.
+                  Au prix de nombreuses pertes, les dragons restants finirent par s&apos;enfuir du continent, s&apos;installant sur
+                  <Link href="/lointains/vhorgath" className="text-orange-400 hover:underline"> Vhorgath</Link>, une terre lointaine où ils restent maîtres.
                 </p>
                 <div className="bg-black/40 rounded-lg p-4 border border-red-500/30">
                   <p className="text-red-400 font-semibold">

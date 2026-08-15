@@ -16,9 +16,10 @@ Repères temporels : la Guerre des Deux Siècles a duré ~200 ans et s'est achev
 - **Meltoria** (centre) — Royaume féodal, le seul vrai "royaume" politiquement. Capitale : **Majestia**.
 - **Sylvestri** (sud) — Fédération de villages elfiques/magiques, berceau de la magie, pays le plus vieux du continent. Capitale de facto : **Aewood** (siège de l'Académie).
 - **Les Enfers** : royaume souterrain des démons, sous le continent, créé par les dieux. Carte séparée (`public/map/carte_enfer_astrenor.png`).
-- **Oryn** : satellite naturel (lune) d'où viennent les Démonides Astrales — quasi pas développé.
-- **Sonihelm** : île flottante au-dessus des nuages, habitat des anges — quasi pas développé.
-- Un « continent des dragons », jamais nommé ni cartographié, existe quelque part au loin (les dragons y ont fui après avoir été chassés d'Astrenor).
+- **Terres Lointaines** (`src/app/lointains/`, nav dédiée) : développées le 2026-08-15 (ANG-01/ANG-02 du codex des failles) - pages riches type `/enfers`, sans carte interactive (pas d'asset image).
+  - **Oryn** (`/lointains/oryn`) : lune saturée de mana primordial, patrie des **Sylithra** - leur vrai nom, qu'Astrenor connaît sous celui de Démonides Astrales. Peuple bio-luminescent/empathe, clans de "tisseuses astrales", enfants nés sous le "Fendilume" (présage d'union ou de rupture). Pouvoirs : Lumisiphon (absorption d'émotions, avec rémanences psychiques en contrepartie) et Matérialisation Astrale (rend tangible griffes/queue-lame, coûte de la vitalité). Ils échouent sur Astrenor lors des pluies de comètes, coupés de leur clan.
+  - **Sonihelm** (`/lointains/sonihelm`) : île flottante, exilée par volonté propre, dérive au-dessus des trois royaumes. Les anges y ont 3 objectifs de création (après le fiasco des Lilim) : être une espèce "parfaite" qui n'agit jamais contre l'ordre établi, archiver l'histoire du monde (**l'Archive des Mémoires**, bâtiment central), et à terme effacer les Lilim. **Reconnecté à un thread existant** : l'attaque angélique contre les Lilim (voir Les Enfers ci-dessous) est désormais explicitement leur 3ᵉ mandat mis en action par un dieu. 1 à 6 paires d'ailes = hiérarchie interne, apparence juvénile, très peu aperçus.
+  - **Vhorgath** (`/lointains/vhorgath`, alias érudit "Terres Écaillées") : nom donné au continent des dragons, jamais cartographié jusqu'à récemment. Terres volcaniques, clans sans couronne unique. Développement volontairement laissé ouvert : une force inconnue semble avoir uni des clans rivaux derrière les attaques actuelles (Porteurs de Mort, Chaldryd) - non résolu par design, à ne pas trancher sans en discuter avec Vincent.
 - Monnaie commune : le **Rufiyaa** (10 bronze = 1 argent, 100 argent = 1 or, 1000 or = 1 platine).
 
 ## Chronologie condensée
@@ -83,7 +84,7 @@ Repères temporels : la Guerre des Deux Siècles a duré ~200 ans et s'est achev
 - Morts-vivants : Squelette, Zombie (peste d'Anduin).
 - Magiques : Golem Arcanique, Esprits (feu/foudre/eau/terre/ténèbres/sacré — 2 derniers légendaires).
 - **Salamandres Sylvestres** (9 sous-espèces) : Verte (commune) < Violette < Cyan < Jaune (meute) < **Rouge** (légendaire, vue une fois par le chasseur Adencia Pebbles).
-- Draconiennes : Vouivre (élevé), et **les Dragons** (légendaire) — chassés du continent avant même la formation des royaumes par les seigneurs de Meltoria, exilés sur une terre lointaine (jamais nommée). Leur réapparition = présage de catastrophe. **Thread actif non résolu** : des attaques de dragons coordonnées et intelligentes détruisent des villes en ce moment ("Porteurs de Mort" comme **Chaldryd**, gestion de camps de prisonniers) — aucune explication du déclencheur, aucune carte, quasi aucun développement ailleurs sur le site.
+- Draconiennes : Vouivre (élevé), et **les Dragons** (légendaire) — chassés du continent avant même la formation des royaumes par les seigneurs de Meltoria, exilés sur **Vhorgath** (voir Terres Lointaines ci-dessus). Leur réapparition = présage de catastrophe. **Thread toujours partiellement ouvert par design** : des attaques de dragons coordonnées et intelligentes détruisent des villes en ce moment ("Porteurs de Mort" comme **Chaldryd**, gestion de camps de prisonniers) — la page Vhorgath pose l'hypothèse d'une force ayant uni les clans, sans trancher qui/quoi.
 
 ## Races (sélection, non exhaustif)
 
@@ -94,9 +95,9 @@ Repères temporels : la Guerre des Deux Siècles a duré ~200 ans et s'est achev
 - Créatures de Sylvestri : Demi-Humains, Dryades, Fées (immortelles), Sirènes/Tritons, Lamias, Krakenanthropus.
 - Guerrières : Orcs (nés de géants + elfettes, exilés vers Anduin), Centaures.
 - Enfers : Démons, Succubes/Incubes, Lamias infernales.
-- Célestes/spirituelles : Anges (île Sonihelm), Fantômes (visibles, pas de rumeur d'invisibilité).
+- Célestes/spirituelles : Anges (île Sonihelm, voir Terres Lointaines), Fantômes (visibles, pas de rumeur d'invisibilité).
 - Draconiques : Demi-Dragons (dont famille Nécéron).
-- Astrales : Démonides Astrales (Oryn, se nourrissent d'émotions, croisées lors de pluies de comètes).
+- Astrales : Démonides Astrales / **Sylithra** (Oryn, voir Terres Lointaines ; se nourrissent d'émotions, croisées lors de pluies de comètes).
 
 ## Les Enfers & les Lilim
 
@@ -128,9 +129,8 @@ Structure de campagne RP : quêtes liées aux Archevêques (mystère/politique),
 
 ## Zones à fort potentiel mais peu développées (pistes d'écriture)
 
-- **Continent des dragons** : jamais nommé/cartographié, alors que les attaques de dragons sont un événement "actuel" majeur (Chaldryd, Porteurs de Mort, camps de prisonniers). Gros potentiel de page dédiée.
-- **Oryn** (lune, Démonides Astrales) et **Sonihelm** (île des anges) : une ligne chacun, aucune page.
-- **L'ange amnésique** tombé sur Astrenor après la rupture de la Porte : thread ouvert, aucun personnage/suite.
+- **L'ange amnésique** tombé sur Astrenor après la rupture de la Porte : thread volontairement laissé ouvert (voir Sonihelm), aucun personnage/suite - à ne pas résoudre sans validation de Vincent.
+- **Qui a uni les clans de Vhorgath** derrière les attaques de dragons actuelles : même chose, volontairement non tranché.
 - Cosmologie non unifiée : Néantith (premier souffle), Vermyros (dieu du sang), le panthéon des Cinq, l'Orphelin/Himmel vs Les Enfers des Lilim — plusieurs strates théologiques qui ne se répondent pas explicitement entre elles.
 - Fiches de villes vides dans `villes.ts` (Barrencrag, Brien, Haufen, Escren) et incomplètes (population manquante sur Gives, Signeroy, Dorteres).
 

@@ -42,6 +42,9 @@ Royaume souterrain créé par les dieux pour y bannir les **Lilim**, une fratrie
 #### ⛪ Religion
 Meltoria vénère un panthéon de Cinq Dieux (dont l'Orphelin, dieu de l'ombre et de la mort) ; Anduin l'a rejeté au profit d'un humanisme d'État. Le **Culte d'Eldritch**, dévoué à un dieu innommable et mené par l'unique prêtresse Emily Morgan, vient d'être traqué et éradiqué par l'Église meltorienne.
 
+#### 🌌 Terres Lointaines
+Au-delà du continent : **Oryn**, la lune de lumière d'où viennent les Sylithra (Démonides Astrales) ; **Sonihelm**, l'île flottante des anges et de leur Archive des Mémoires ; **Vhorgath**, le continent des dragons exilés, désormais à l'origine d'attaques coordonnées inexpliquées.
+
 ---
 
 ## 📖 Lore & Légendes
@@ -83,7 +86,7 @@ Ouvrez [http://localhost:3000](http://localhost:3000) pour voir le résultat.
 
 ### Structure
 
-- `src/app/` : Pages de l'application (Next.js App Router) - Accueil, Royaumes (Meltoria, Sylvestri, Anduin), Carte, Histoire, Magie, Les Enfers, Religion, Races, Bestiaire, Légendes, Quêtes, Almanach.
+- `src/app/` : Pages de l'application (Next.js App Router) - Accueil, Royaumes (Meltoria, Sylvestri, Anduin), Carte, Histoire, Magie, Les Enfers, Religion, Terres Lointaines (Oryn, Sonihelm, Vhorgath), Races, Bestiaire, Légendes, Quêtes, Almanach.
 - `src/app/carte/villes.ts` : Données des villes affichées sur la carte interactive.
 - `src/app/enfers/territoires.ts` : Données des territoires des Enfers.
 - `src/components/` : Composants partagés (cartes, en-tête, pied de page, sélecteur de thème).

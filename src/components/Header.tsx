@@ -21,6 +21,15 @@ const navigation = [
   { name: 'Les Enfers', href: '/enfers' },
   { name: 'Religion', href: '/religion' },
   {
+    name: 'Terres Lointaines',
+    href: '/lointains',
+    submenu: [
+      { name: 'Oryn', href: '/lointains/oryn' },
+      { name: 'Sonihelm', href: '/lointains/sonihelm' },
+      { name: 'Vhorgath', href: '/lointains/vhorgath' },
+    ]
+  },
+  {
     name: 'Encyclopédie',
     href: '/races',
     submenu: [

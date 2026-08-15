@@ -116,9 +116,10 @@ export default function EnfersPage() {
             <div className="bg-black/40 border border-accent/20 rounded-lg p-6 mb-6">
               <h4 className="text-accent font-bold mb-3">⚔️ L&apos;Attaque des Anges</h4>
               <p className="text-foreground/60 text-sm mb-4">
-                Un dieu utilisa ses vieilles créations, les anges, pour se débarrasser du
-                &quot;problème&quot; des démons. Une dizaine d&apos;anges attaquèrent les enfers,
-                passant par la porte qui resta scellée après leur passage mais fragilisée.
+                Un dieu utilisa ses vieilles créations, les anges de <Link href="/lointains/sonihelm" className="text-accent hover:underline">Sonihelm</Link>,
+                pour se débarrasser du &quot;problème&quot; des démons. Une dizaine d&apos;anges
+                attaquèrent les enfers, passant par la porte qui resta scellée après leur
+                passage mais fragilisée.
               </p>
               <p className="text-foreground/60 text-sm">
                 Durant leur voyage vers les Lilim, de nombreux démons moururent.

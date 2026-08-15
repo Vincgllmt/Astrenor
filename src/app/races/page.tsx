@@ -335,11 +335,17 @@ export default function RacesPage() {
         <section className="mb-16">
           <SectionTitle title="Êtres Célestes & Spirituels" />
 
+          <div className="text-center mb-4">
+            <Link href="/lointains/sonihelm" className="text-yellow-400 hover:underline text-sm">
+              En savoir plus sur Sonihelm →
+            </Link>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <RaceCard
               name="Anges"
               icon="👼"
-              description="Créés pour être 'parfaits' et jouer le rôle d'archivistes du monde. Vivent sur l'île flottante Sonihelm au-dessus des nuages. Apparence juvénile avec 1 à 6 paires d'ailes."
+              description="Créés après le fiasco des Lilim pour être 'parfaits', archiver l'histoire du monde et, un jour, l'effacer. Vivent sur l'île flottante Sonihelm au-dessus des nuages. Apparence juvénile avec 1 à 6 paires d'ailes selon leur rang."
               capacity="Manipulation de la magie de la lumière, vol, vision des sentiments primaires (peur, joie, dégoût, tristesse, colère, surprise)."
               origin="Sonihelm"
               lifespan="200-300 ans"
@@ -397,11 +403,17 @@ export default function RacesPage() {
         <section className="mb-16">
           <SectionTitle title="Races Astrales" />
 
+          <div className="text-center mb-4">
+            <Link href="/lointains/oryn" className="text-orange-400 hover:underline text-sm">
+              En savoir plus sur Oryn →
+            </Link>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <RaceCard
                 name="Démonides Astrales"
                 icon="🌑"
-                description="Créatures astrales, on les trouve sur Oryn, le satellite naturel. Ils ressemblent aux démons mais en sont différents dans la texture : leurs griffes, cornes et queues semblent éthérés. Ils se nourrissent des émotions des êtres vivants. On en croise parfois lors de soirées de comètes, s'écrasant sur Astrenor."
+                description="Sur Oryn, leur lune d'origine, on les appelle les Sylithra. Créatures bio-luminescentes, elles ressemblent aux démons mais en sont différentes dans la texture : leurs griffes, cornes et queues semblent éthérées. Elles se nourrissent des émotions des êtres vivants. On en croise parfois lors de pluies de comètes, s'écrasant sur Astrenor."
                 capacity="Manipulation de la gravité et de l'énergie astrale. Peuvent se téléporter sur de courtes distances et devenir intangibles."
                 origin="Oryn"
                 lifespan="300 ans"
