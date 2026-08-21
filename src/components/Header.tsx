@@ -120,7 +120,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden bg-black/95 border-t border-primary-dark max-h-[calc(100vh-5rem)] overflow-y-auto">
+          <div className="lg:hidden bg-black/95 border-t border-primary-dark max-h-[calc(100svh-5rem)] overflow-y-auto">
             {navigation.map((item) => (
               <div key={item.name}>
                 <div className="flex items-center">
