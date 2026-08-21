@@ -45,6 +45,7 @@ const navigation = [
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
+  const [mobileSubmenu, setMobileSubmenu] = useState<string | null>(null);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/90 to-transparent backdrop-blur-sm">
@@ -101,7 +102,10 @@ export default function Header() {
 
           {/* Mobile menu button */}
           <button
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => {
+              setIsOpen(!isOpen);
+              setMobileSubmenu(null);
+            }}
             className="lg:hidden p-2 text-foreground hover:text-primary transition-colors"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,17 +120,38 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden bg-black/95 border-t border-primary-dark">
+          <div className="lg:hidden bg-black/95 border-t border-primary-dark max-h-[calc(100vh-5rem)] overflow-y-auto">
             {navigation.map((item) => (
               <div key={item.name}>
-                <Link
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 text-foreground/80 hover:text-primary hover:bg-primary/10 transition-all"
-                >
-                  {item.name}
-                </Link>
-                {item.submenu && (
+                <div className="flex items-center">
+                  <Link
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="flex-1 block px-4 py-3 text-foreground/80 hover:text-primary hover:bg-primary/10 transition-all"
+                  >
+                    {item.name}
+                  </Link>
+                  {item.submenu && (
+                    <button
+                      onClick={() =>
+                        setMobileSubmenu(mobileSubmenu === item.name ? null : item.name)
+                      }
+                      aria-expanded={mobileSubmenu === item.name}
+                      aria-label={`Afficher le sous-menu ${item.name}`}
+                      className="px-4 py-3 text-foreground/60 hover:text-primary transition-colors"
+                    >
+                      <svg
+                        className={`w-4 h-4 transition-transform ${mobileSubmenu === item.name ? 'rotate-180' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                  )}
+                </div>
+                {item.submenu && mobileSubmenu === item.name && (
                   <div className="pl-6 bg-black/50">
                     {item.submenu.map((subitem) => (
                       <Link
