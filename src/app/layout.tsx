@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cinzel, Lora } from "next/font/google";
 import "./globals.css";
 import { Header, Footer } from "@/components";
@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   title: "Astrenor - Continent aux Trois Royaumes",
   description: "Bienvenue sur le continent d'Astrenor, un vaste territoire baigné de magie et de mystère, où les légendes prennent vie et où les héros sont façonnés.",
   keywords: ["RP", "roleplay", "médiéval", "fantastique", "Astrenor", "Meltoria", "Sylvestri", "Anduin"],
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
