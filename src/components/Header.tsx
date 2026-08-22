@@ -31,7 +31,7 @@ const navigation = [
   },
   {
     name: 'Encyclopédie',
-    href: '/races',
+    href: '/encyclopedie',
     submenu: [
       { name: 'Races', href: '/races' },
       { name: 'Bestiaire', href: '/bestiaire' },

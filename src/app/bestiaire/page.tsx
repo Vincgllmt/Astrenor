@@ -269,6 +269,65 @@ export default function BestiairePage() {
           </div>
         </section>
 
+        {/* Oiseaux-Tonnerre */}
+        <section className="mb-16">
+          <SectionTitle title="Les Oiseaux-Tonnerre" subtitle="3 sous-espèces différenciées par taille et couleur" />
+
+          <p className="text-foreground/70 text-sm max-w-3xl mx-auto text-center mb-8">
+            Très intelligents, les Oiseaux-Tonnerre peuvent devenir des alliés et des amis à condition d&apos;être
+            traités avec respect. Bien que chaque sous-espèce puisse se reproduire avec les autres, aucun hybride
+            n&apos;existe. Ils ne sont pas compatibles avec un élevage.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div className="bg-gradient-to-br from-cyan-500/20 to-transparent border border-cyan-500/30 rounded-xl p-5">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-3xl">🦅</span>
+                <h4 className="text-lg font-bold text-cyan-300">Oiseau-Tonnerre Blanc</h4>
+              </div>
+              <p className="text-foreground/70 text-sm mb-2">
+                Taille variant entre 4,25 m et 5 m. Yeux bleus (toutes nuances). Foudre cyan aux propriétés
+                étourdissantes (onde de choc). Corps solide, musculairement puissants, mais peu rapides.
+              </p>
+              <span className="text-xs px-2 py-1 rounded border text-orange-400 bg-orange-500/20 border-orange-500/30">ÉLEVÉ</span>
+            </div>
+
+            <div className="bg-gradient-to-br from-amber-500/20 to-transparent border border-amber-500/30 rounded-xl p-5">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-3xl">🦅</span>
+                <h4 className="text-lg font-bold text-amber-300">Oiseau-Tonnerre Brun</h4>
+              </div>
+              <p className="text-foreground/70 text-sm mb-2">
+                Peut arborer toutes les nuances de brun et de crème. Taille variant entre 3,50 m et 4,50 m. Yeux
+                d&apos;or. Foudre dorée aux propriétés paralysantes (onde de choc). Corps fin, peu puissants
+                musculairement, mais très souples et rapides.
+              </p>
+              <span className="text-xs px-2 py-1 rounded border text-orange-400 bg-orange-500/20 border-orange-500/30">ÉLEVÉ</span>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-slate-800/40 to-red-950/20 border border-red-900/40 rounded-xl p-8">
+            <div className="flex items-start gap-6">
+              <span className="text-6xl">🦅</span>
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <h3 className="text-2xl font-bold text-red-400">Oiseau-Tonnerre Noir</h3>
+                  <span className="text-xs px-2 py-1 rounded border text-purple-400 bg-purple-500/20 border-purple-500/30">LÉGENDAIRE</span>
+                </div>
+                <p className="text-foreground/70 mb-4">
+                  Taille de plus de 5 m mais de moins de 6 m. Extrêmement rares : peu d&apos;archives mentionnent
+                  cette sous-espèce et personne n&apos;en a aperçu depuis au moins 500 ans.
+                </p>
+                <p className="text-foreground/70 mb-4">
+                  Décrits comme noirs comme la nuit, aux yeux rouges profonds, les propriétés de leur foudre restent
+                  inconnues. D&apos;après les récits que l&apos;on en fait, ils sembleraient posséder la force des
+                  blancs et la vitesse des bruns.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Créatures Draconiennes */}
         <section id="dragons" className="mb-16 scroll-mt-24">
           <SectionTitle title="Créatures Draconiennes" subtitle="Les descendants et apparentés des dragons" />
