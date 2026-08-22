@@ -298,25 +298,17 @@ export default function RacesPage() {
         <section className="mb-16">
           <SectionTitle title="Arachnées" subtitle="Nées des profondeurs, entre instinct de survie et sang-froid" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6">
             <RaceCard
               name="Arachnées"
               icon="🕷️"
-              description="Nées dans des donjons profonds sous terre, dépourvues de toute forme humaine à la naissance, elles doivent dévorer leur propre fratrie pour survivre selon la loi du plus fort. Au fil des épreuves et des combats, elles évoluent jusqu'à une forme semi-humaine puis, une fois leur propre mère vaincue, une forme humaine complète — tout en gardant la capacité de reprendre leur apparence arachnéenne d'origine. Solitaires par nature, elles fuient la compagnie et détestent qu'on cherche à les aider."
+              description="Nées dans des donjons profonds sous terre, dépourvues de toute forme humaine à la naissance, elles doivent dévorer leur propre fratrie pour survivre selon la loi du plus fort. Au fil des épreuves et des combats, elles évoluent jusqu'à une forme semi-humaine puis, une fois leur propre mère vaincue elles adopte une forme humaine complète tout en gardant la capacité de reprendre leur apparence arachnéenne d'origine. Solitaires par nature, elles fuient la compagnie et détestent qu'on cherche à les aider. Les mâles, bien plus rares que les femelles, ne conservent pas le corps arachnéen inférieur propre à leur race : seules des pattes supplémentaires dans le dos trahissent encore leur héritage une fois leur forme humaine atteinte."
               capacity="Fils tissés par les ongles sous forme humaine ou par l'abdomen sous forme arachnéenne, modulables en lames tranchantes, filaments collants ou brins empoisonnés ; crocs venimeux ; maîtrise de la corrosion ; magie reconstruite à partir de sorts déjà observés ; régénération lente (plusieurs jours)."
               origin="Donjons souterrains"
               lifespan="Indéterminée (100+ ans)"
               color="purple"
               stats={{ force: 8, agilite: 7, intelligence: 6 }}
             />
-
-            <div className="bg-gradient-to-br from-purple/10 to-transparent border border-purple/20 rounded-xl p-6">
-              <h4 className="font-bold text-purple mb-2">Les mâles Arachnées</h4>
-              <p className="text-foreground/60 text-sm">
-                Bien plus rares que les femelles, ils ne conservent pas le corps arachnéen inférieur propre à leur race :
-                seules des pattes supplémentaires dans le dos trahissent encore leur héritage une fois leur forme humaine atteinte.
-              </p>
-            </div>
           </div>
         </section>
 
