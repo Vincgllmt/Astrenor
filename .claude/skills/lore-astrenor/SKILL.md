@@ -94,6 +94,7 @@ Repères temporels : la Guerre des Deux Siècles a duré ~200 ans et s'est achev
 - Hybrides : Demi-Orcs, Demi-Démons, Mi-Bêtes.
 - Créatures de Sylvestri : Demi-Humains, Dryades, Fées (immortelles), Sirènes/Tritons, Lamias, Krakenanthropus.
 - Guerrières : Orcs (nés de géants + elfettes, exilés vers Anduin), Centaures.
+- **Arachnées** (donjons souterrains, indéterminée/100+ ans) : nées sans forme humaine, survivent en dévorant leur fratrie ("tuer ou être tué"), évoluent vers une forme semi-humaine puis humaine complète (en tuant leur propre mère), gardent la capacité de reprendre forme arachnéenne. Fils tissés (ongles en forme humaine / abdomen en forme arachnéenne) modulables en lames/collant/poison, crocs venimeux, corrosion, magie reconstruite par observation, régénération lente. Solitaires, détestent qu'on les aide. Mâles rares : perdent le corps arachnéen inférieur mais gardent des pattes dans le dos. PNJ de référence : **Satella Shiraori**.
 - Enfers : Démons, Succubes/Incubes, Lamias infernales.
 - Célestes/spirituelles : Anges (île Sonihelm, voir Terres Lointaines), Fantômes (visibles, pas de rumeur d'invisibilité).
 - Draconiques : Demi-Dragons (dont famille Nécéron).
