@@ -14,7 +14,7 @@ export default function ReligionPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <span className="text-meltoria text-sm uppercase tracking-widest">Foi & Croyances</span>
-          <h1 className="text-4xl md:text-6xl font-bold text-gradient mt-2 mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold leading-relaxed text-gradient mt-2 mb-6">
             Les Religions d&apos;Astrenor
           </h1>
           <p className="text-foreground/70 max-w-3xl mx-auto">
